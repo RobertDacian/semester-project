@@ -1,6 +1,6 @@
 {
-  "name": "friends",
-  "version": "1.0.0",
+  "name": "semester-project",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/RobertDacian/semester-project.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Robert Dacian But",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RobertDacian/semester-project/issues"

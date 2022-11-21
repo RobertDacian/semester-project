@@ -1,1 +1,1 @@
-# friends
+# Semester Project
