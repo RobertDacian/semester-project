@@ -1,0 +1,12 @@
+//Buttons Styling
+
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.profile-social-icon {
+  width: $profile-social-icon-width;
+  height: $profile-social-icon-height;
+}

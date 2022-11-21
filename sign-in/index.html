@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Squid | Sign In</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />    
+  </head>
+
+  <body>
+    <!-- Page content -->
+    <section>
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center g-0 min-vh-100">
+          <div class="col-lg-5 col-md-8 py-8 py-xl-0">
+            <!-- Card -->
+            <div class="card shadow">
+              <!-- Card body -->
+              <div class="card-body p-4">
+                <div class="mb-4">
+                  <a href="/"><img src="/assets/brand//dev.squid.svg" class="mb-4" alt="" /></a>
+                  </a>
+                  <h1 class="mb-2">Sign in</h1>
+                  <span>Don’t have an account? <a href="/sign-up/" class="ms-2">Sign up</a></span>
+                </div>
+                <!-- Form -->
+                <form action="/profile/" method="GET">
+                  <!-- Form Username -->
+                  <div class="mb-4">
+                    <label for="email" class="form-label">Username or email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email address"
+                      required
+                    />
+                  </div>
+                  <!-- Form Password -->
+                  <div class="mb-4">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      name="password"
+                      placeholder="**************"
+                      required
+                    />
+                  </div>
+                  <!-- Form Checkbox -->
+                  <div class="d-lg-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="rememberme" />
+                      <label class="form-check-label" for="rememberme">Remember me</label>
+                    </div>
+                    <div>
+                      <a href="/forget-password/">Forgot your password?</a>
+                    </div>
+                  </div>           
+                  <!-- Form Button -->
+                  <div class="d-grid">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>              
+                  <hr class="my-4" />
+                  <!-- Social Media -->
+                  <div class="mt-4 d-flex gap-5 justify-content-center">
+                    <!--Facebook-->
+                    <a href="#" class="btn-social">
+                      <!-- <img src="/assets/svg/facebook-f.svg"></img> -->
+                      <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <!--Twitter-->
+                    <a href="#" class="btn-social ">
+                      <!-- <img src="/assets/svg/twitter.svg"></img> -->
+                      <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <!--Google-->
+                    <a href="#" class="btn-social ">
+                      <!-- <img src="/assets/svg/google.svg"></img> -->
+                      <i class="fab fa-google fa-lg"></i>
+                    </a>
+                    <!--GitHub-->
+                    <a href="#" class="btn-social">
+                      <!-- <img src="/assets/svg/github-alt.svg"></img> -->
+                      <i class="fab fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Scripts -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

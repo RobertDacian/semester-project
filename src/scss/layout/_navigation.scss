@@ -1,0 +1,70 @@
+// Navigation Styling
+
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      color: $gray-700;
+    }
+  }
+  @media (max-width: 992px) {
+    .navbar-right-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+
+  .navbar-brand {
+    width: 180px;
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      width: 100px;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    &:focus {
+      box-shadow: none;
+    }
+    .icon-bar {
+      width: 28px;
+      height: 2px;
+      background-color: $secondary;
+      display: block;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      margin-top: 0.25rem;
+    }
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 30% 100%;
+      background-color: $secondary;
+    }
+    .middle-bar {
+      opacity: 0;
+    }
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 15% -100%;
+      background-color: $secondary;
+    }
+  }
+  .navbar-toggler.collapsed {
+    .top-bar {
+      transform: rotate(0);
+      background-color: $secondary;
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+      background-color: $secondary;
+    }
+  }
+}

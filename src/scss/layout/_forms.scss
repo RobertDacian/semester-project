@@ -1,0 +1,27 @@
+// Forms Styling
+
+.require {
+  color: $danger;
+}
+
+form {
+  .form-control {
+    &:focus {
+      border-color: $border-color-focus;
+    }
+  }
+
+  @media (max-width: 992px) {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  .search-icon {
+    opacity: 50%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+}

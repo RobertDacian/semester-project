@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Squid | Profile Privacy Page</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+
+  <body>
+
+     <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-transparent navbar-expand-lg pt-lg-4 pt-md-4 pt-2">
+        <div class="container-lg">
+          <a class="navbar-brand p-0 me-03" href="/"
+            ><img src="/assets/brand/dev.squid.svg" alt=""/></a>   
+          <ul class="navbar-nav navbar-right-wrap d-lg-none ms-auto me-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/profile/">Profile</a>
+            </li>           
+            <li class="nav-item">
+                <a class="nav-link" href="/sign-in/">Account</a>
+            </li>
+          </ul>           
+          <!-- Hamburger Button -->
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-default"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="icon-bar top-bar mt-0"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <!-- Nav Collapse -->
+          <div class="collapse navbar-collapse mt-lg-0 mt-md-4 mt-4" id="navbar-default">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/">About</a>
+              </li>            
+              <li class="nav-item">
+                <a class="nav-link" href="/contact/">Contact</a>
+              </li>
+            </ul>
+            <div class="form-wrapper d-flex justify-content-lg-end ms-auto justify-content-md-start  ">
+              <form class="mt-3 mt-lg-0 ms-lg-3 me-lg-3  d-flex align-items-center ">
+                <span class="position-absolute ps-3 search-icon ">
+                  <img src="/assets/svg/search.svg" class="search-icon"></img>
+                </span>
+                <input type="search" class="bg-white form-control ps-6" placeholder="Search " />
+              </form>
+            </div>         
+            <ul class="navbar-nav navbar-right-wrap d-lg-flex d-none">
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/">Profile</a>
+              </li>            
+              <li class="nav-item">
+                <a class="nav-link" href="/sign-in/">Account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--  Content -->
+    <section class="profile-hero pt-lg-8 pb-lg-8 pt-md-8 pb-md-8 pt-4 pb-4">
+      <div class="container-lg">
+        <!-- Hero Section -->
+        <div class="row">
+          <div class="col-12">
+            <!-- Hero Card -->
+            <div class="profile-bg">
+              <img src="/assets/images/profile-bg.jpg" class="profile-bg-img rounded-top"  alt="Background image">
+            </div>
+            <div
+              class="d-flex flex-wrap align-items-end justify-content-between gap-4 bg-white px-4 py-4 rounded-bottom shadow-sm"
+            >
+              <div class="d-flex align-items-center">
+                <div
+                  class="me-2"
+                >
+                  <img
+                    src="/assets/avatars/img_me.jpg"
+                    class="avatar-lg rounded-circle "
+                    alt=""
+                  />
+                </div>
+                <div class="d-block">
+                  <h2 class="mb-0">Robert D.B</h2>
+                  <p class="mb-0 ">@RobertDacian</p>
+                </div>
+              </div>
+              <div>       
+                <!-- Modal Button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
+                Create Post
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page Content -->
+
+        <div class="row mt-4">
+          <div class="col-lg-3 col-md-4 col-12">
+            <!-- Side Page Nav -->
+            <nav class="navbar navbar-expand-md d-flex justify-content-end bg-white shadow-sm mb-0  pe-4 py-3 sidenav">
+              <!-- Nav Menu -->
+              <h3 class="d-xl-none d-lg-none d-md-none mb-0 me-2">Menu</h3>
+              <!-- Hamburger Button -->
+              <button
+                class="navbar-toggler d-md-none rounded bg-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sidenav"
+                aria-controls="sidenav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="/assets/svg/filter-circle-fill.svg" class="text-white"></img>
+              </button>
+              <!-- Nav Collapse -->
+              <div class="collapse navbar-collapse" id="sidenav">
+                <div class="navbar-nav flex-column ms-4">
+
+                  <!-- Nav Menu Title -->
+                  <spam class="navbar-header fw-bold mb-0">Navigation Menu</spam>
+                  <!-- Nav Items -->
+                  <ul class="list-unstyled  mb-4"> 
+                    <!-- Nav item -->  
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/">Profile</a>
+                    </li>           
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/my-posts.html">Posts</a>
+                    </li>                  
+                  </ul>
+                  <!-- Nav Menu Title -->
+                  <spam class="navbar-header fw-bold mb-0">Account Settings</spam>
+                  <!-- Nav Items -->
+                  <ul class="list-unstyled ms-n2 mb-0">             
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/profile-security.html"
+                        ><i class="fe fe-user nav-icon"></i>Security</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/social-profiles.html"
+                        ><i class="fe fe-refresh-cw nav-icon"></i>Social Profiles</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/profile-notifications.html"
+                        ><i class="fe fe-bell nav-icon"></i>Notifications</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link active" href="/profile/profile-privacy.html"
+                        ><i class="fe fe-lock nav-icon"></i>Profile Privacy</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/delete-profile.html"
+                        ><i class="fe fe-trash nav-icon"></i>Delete Profile</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/"
+                        ><i class="fe fe-power nav-icon"></i>Sign Out</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!-- Privacy Profile Section -->
+          <div class="item col-lg-9 col-md-8 col-12 ">
+            <!-- Card -->
+            <div class="card mb-4 shadow-sm rounded">
+                  <!-- Card Header -->
+                  <div class="card-header">
+                    <h2 class="mb-2 ">This is the profile privacy content section</h2>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <p class="mb-2 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
+                  </div>
+                  <!-- Card Footer -->
+                  <div class="card-footer">
+                    <div class="row d-flex gap-2 flex-wrap">
+                      <div class="col-auto d-flex align-items-center gap-2 ">
+                        
+                        <h4 class="mb-0">Card Footer</h4>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>             
+          </div>  
+        </div>
+      </div>
+       <!-- Modal Start -->
+       <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header ">
+                  <h4 class="modal-title ms-2" id="postModalLabel">Use this form to create a new post</h4>
+                  <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">               
+                  <div class="row">                       
+                      <div class="col-12">                           
+                        <h1 class="mb-2">Create post</h1>                         
+                        <form action="/" method="GET">                             
+                              <div class="form-group">
+                                  <label for="subject">Subject <span class="require">*</span></label>
+                                  <input type="text" class="form-control mb-4" name="subject"required/>
+                              </div>                             
+                              <div class="form-group">
+                                  <label for="description">Post Content <span class="require">*</span></label>
+                                  <textarea rows="5" class="form-control mb-4" name="description"required ></textarea>
+                              </div>
+                              <div class="modal-footer d-flex justify-content-start border-top-0 p-0">
+                                <button type="submit" class="btn btn-primary">Create Posts</button>
+                                <button type="submit" class="btn btn-link" data-bs-dismiss="modal">Cancel</button>
+                              </div>                             
+                        </form>
+                      </div>                     
+                  </div>            
+                </div>
+              </div>
+            </div>
+       </div>
+       <!-- Modal End -->  
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-white mt-lg-8 mt-md-4">
+      <div class="container-lg">
+        <!-- Footer Body -->
+        <div class="row d--flex align-items-center justify-content-center">
+          <div class="col-6 col-md-6 col-12 d-flex flex-column mb-4 mt-8">
+            <!-- About-->
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="/assets/brand/dev.squid.png" class="brand-footer" alt="" />
+              </div>
+              <div class="mt-4 text-center">
+                <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui numquam suscipit corporis enim. Unde suscipit nemo odio quis iure.
+                </p>
+              </div>     
+          </div>
+        </div>
+        <!-- Footer Bottom-->
+        <div class="row align-items-center g-0 border-top py-2 mt-4">
+          <div class="col-12">
+            <nav class="nav nav-footer d--flex justify-content-center">
+              <a class="nav-link ps-0" href="#">Privacy Policy</a>
+              <a class="nav-link" href="#">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
