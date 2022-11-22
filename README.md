@@ -54,6 +54,42 @@ npm install
 README.md
 ```
 
+- Installed Bootstrap.
+
+```
+npm install bootstrap
+```
+
+- Installed SASS Compiler.
+
+```
+npm install -D sass
+```
+
+- Added the build and watch script commands to scripts in package.json.
+
+```
+ "scripts": {
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css"
+  }
+```
+
+- Installed live-server.
+
+```
+npm install -D live-server
+```
+
+- Added the live-server extension to the a watch command in the scripts in package.json, if we type npm run watch this will watch SASS and start the project in live server.
+
+```
+ "scripts": {
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server",
+  }
+```
+
 - Version updated to 1.0.1
 
 ```
