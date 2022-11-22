@@ -1,1 +1,134 @@
-# Semester Project
+# This repository is for the Semester Project.
+
+## Initializing and starting the project
+
+- Clone the project and initialize git in your code editor.
+
+```
+ git init
+```
+
+- Install Dependencies.
+
+```
+ npm install
+```
+
+- Build the project.
+
+```
+ npm run build
+```
+
+- Start the project with live-server.
+
+```
+ npm run start
+```
+
+## Project Setup
+
+### Packages and files installed for this project
+
+- Initialized a git repository.
+
+```
+git init
+```
+
+- Installed and set up node package manager.
+
+```
+npm install
+```
+
+- Added .gitignore file.
+
+```
+.gitignore
+```
+
+- Added README.md file.
+
+```
+README.md
+```
+
+- Version updated to 1.0.1
+
+```
+"version": "1.0.1"
+```
+
+- Installed prettier.
+
+```
+npm install --save-dev prettier
+```
+
+- Added format to scripts in package.json.
+
+```
+"scripts": {
+    "format": "prettier -w src/js/joker.js"
+  },
+```
+
+- Installed ESLint.
+
+```
+npm install eslint --save-dev
+```
+
+- Setting Up ESLint.
+
+```
+npx eslint --init
+```
+
+✔ How would you like to use ESLint? · problems
+✔ What type of modules does your project use? · esm
+✔ Which framework does your project use? · none
+✔ Does your project use TypeScript? · No
+✔ Where does your code run? · browser
+✔ What format do you want your config file to be in? · JSON
+
+- Added lint and lint-fix to scripts in package.json.
+
+```
+"scripts": {
+  "lint": "eslint src/**/*.js",
+  "lint-fix": "eslint src/**/*.js --cache --fix"
+},
+```
+
+- Automating the workflow with pre-commit by installing lint-staged. This command will examine the existing environmental tooling we have created and generate the appropriate scripts for us using two tools: lint-staged and husky.
+
+```
+npx mrm@2 lint-staged
+```
+
+- Added and edited lint-staged scripts in package.json.
+
+```
+"lint-staged": {
+		"*.js": [
+			"prettier --write",
+			"eslint --fix"
+		],
+		"*.html": [
+			"prettier --write"
+		],
+		"*.scss": [
+			"prettier --write"
+		]
+	}
+```
+
+- Updating the workflow branch with automation for prettier, ESLint, lint-staged and husky. Also configured and reconfigured vscode settings.json and package.json.
+
+- Version updated to 1.0.2
+
+```
+"version": "1.0.2"
+```
