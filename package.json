@@ -7,8 +7,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "sass src/scss:dist/css",
-		"watch": "sass --watch src/scss:dist/css",
-		"start": "sass --watch src/scss:dist/css & live-server",
+		"watch": "sass --watch src/scss:dist/css & live-server",
 		"format": "prettier -w src/**/*.js",
 		"lint": "eslint src/**/*.js",
 		"lint-fix": "eslint src/**/*.js --cache --fix",
@@ -18,7 +17,12 @@
 		"type": "git",
 		"url": "git+https://github.com/RobertDacian/semester-project.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"HTML",
+		"CSS",
+		"JS",
+		"semester-project"
+	],
 	"author": "Robert Dacian But",
 	"license": "ISC",
 	"dependencies": {

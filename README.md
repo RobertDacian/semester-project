@@ -36,10 +36,31 @@
 git init
 ```
 
-- Installed and set up node package manager.
+- Installed and set up node package manager with project name, project description, project type, project keywords, author of the project and license.
 
 ```
 npm install
+```
+
+- Added a repository type and link to package.json.
+
+```
+"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RobertDacian/semester-project.git"
+	}
+```
+
+- Added README.md file.
+
+```
+README.md
+```
+
+- Created project folder and file structure.
+
+```
+HTML, CSS and JS
 ```
 
 - Added .gitignore file.
@@ -48,10 +69,47 @@ npm install
 .gitignore
 ```
 
-- Added README.md file.
+- Added node_modules and DS_Store to .gitignore.
 
 ```
-README.md
+/node_modules
+.DS_Store
+```
+
+- Installed Bootstrap.
+
+```
+npm install bootstrap
+```
+
+- Installed SASS Compiler.
+
+```
+npm install -D sass
+```
+
+- Added the build and watch script commands to scripts in package.json.
+
+```
+ "scripts": {
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css"
+  }
+```
+
+- Installed live-server.
+
+```
+npm install -D live-server
+```
+
+- Added the live-server extension to the a watch command in the scripts in package.json, if we type npm run watch this will watch SASS and start the project in live server.
+
+```
+ "scripts": {
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server",
+  }
 ```
 
 - Version updated to 1.0.1
