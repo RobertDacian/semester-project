@@ -4,26 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Squid | Home Page</title>
+    <title>Falling Poets | Home Page</title>
     <link rel="stylesheet" href="/dist/css/main.css" />
   </head>
 
   <body>
-
-    <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-transparent navbar-expand-lg pt-lg-4 pt-md-4 pt-2">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-transparent navbar-expand-lg pt-lg-2 pt-md-2 pt-2 border-bottom"
+      >
         <div class="container-lg">
-          <a class="navbar-brand p-0 me-03" href="/"
-            ><img src="/assets/brand/dev.squid.svg" alt=""/></a>   
-          <ul class="navbar-nav navbar-right-wrap d-lg-none ms-auto me-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/profile/">Account</a>
-            </li>           
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="/sign-in/">Account</a>
-            </li> -->
-          </ul>           
+          <a class="navbar-brand" href="/"
+            ><img src="/assets/brand/falling-poets.png" alt=""
+          /></a>
+
           <!-- Hamburger Button -->
           <button
             class="navbar-toggler collapsed"
@@ -32,1527 +27,1964 @@
             data-bs-target="#navbar-default"
             aria-controls="navbar-default"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="icon-bar top-bar mt-0"></span>
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
           </button>
           <!-- Nav Collapse -->
-          <div class="collapse navbar-collapse mt-lg-0 mt-md-4 mt-4" id="navbar-default">
-            <ul class="navbar-nav">
+          <div
+            class="collapse navbar-collapse mt-lg-0 mt-md-4 mt-4"
+            id="navbar-default"
+          >
+            <ul
+              class="navbar-nav d-flex justify-content-lg-end align-items-center align-items-center w-100"
+            >
               <li class="nav-item">
                 <a class="nav-link active" href="/">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about/">About</a>
-              </li>            
-              <li class="nav-item">
-                <a class="nav-link" href="/contact/">Contact</a>
-              </li>
-            </ul>
-            <div class="form-wrapper d-flex justify-content-lg-end ms-auto justify-content-md-start  ">
-              <form class="mt-3 mt-lg-0 ms-lg-3 me-lg-3  d-flex align-items-center ">
-                <span class="position-absolute ps-3 search-icon ">
-                  <img src="/assets/svg/search.svg" class="search-icon"></img>
-                </span>
-                <input type="search" class="bg-white form-control ps-6" placeholder="Search " />
-              </form>
-            </div>         
-            <ul class="navbar-nav navbar-right-wrap d-lg-flex d-none">
+
               <li class="nav-item">
                 <a class="nav-link" href="/profile/">Profile</a>
-              </li>            
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="/sign-in/">Account</a>
+                <a class="nav-link" href="/">Sign Out</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
-   <!-- Hero Section -->
-    <section class=" hero bg-transparent pt-8 pb-8 ">
-      <div class="container-lg">
-        <div class="row flex-lg-row align-items-center flex-md-column-reverse  ">
-          <div class="col-xl-5 col-lg-6 col-md-12 order-sm-first order-last ">
-            <div class="py-5 ">
-              <h1 class="text-dark display-1 fw-bold">Welcome to Dev Squid Learning</h1>
-              <p class=" mb-4 lead ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, rerum.
-              </p>
-              <div class="btn-group flex-wrap gap-3 ">
-                <a href="#" class="btn btn-primary rounded">Browse Courses</a>
-                <a href="/sign-in/" class="btn btn-white rounded">Get Started</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-7 col-lg-6 col-md-12 ">
-            <img src="assets/images/hero-img-removebg-preview.png" alt="Here image with modern technology" class="img-fluid" />
-          </div>
-        </div>
-        <!-- Features Section -->
-        <div class="bg-white py-4 mt-5 shadow-sm rounded">
-          <div class="row align-items-center g-2">
-          <!-- Features -->
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
-            <div class="d-flex align-items-center justify-content-start ms-4">
-              <div class="ms-0">
-                <h3 class="mb-0 fw-semi-bold">Lot's of online courses</h3>
-              <p class="mb-0 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Features -->
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
-            <div class="d-flex align-items-center justify-content-start ms-4">
-             <div class="ms-0">
-                <h3 class="mb-0 fw-semi-bold">Expert teachers</h3>
-                <p class="mb-0 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-             </div>
-            </div>
-          </div>
-          <!-- Features -->
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg ">
-            <div class="d-flex align-items-center justify-content-start ms-4">
-              <div class="ms-0">
-                <h3 class="mb-0 fw-semi-bold">Lifetime access</h3>
-                <p class="mb-0 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Content -->
-    <section class="posts pt-lg-8 pb-lg-8 pt-sm-4 pb-sm-4"> 
+    <main>
+      <!-- Hero Section -->
+      <section class="hero bg-transparent pt-8 pb-8">
         <div class="container-lg">
-          <div class="row mb-4">
+          <div
+            class="row flex-lg-row align-items-center flex-md-column-reverse"
+          >
+            <div class="col-xl-5 col-lg-6 col-md-12 order-md-first order-last">
+              <div class="py-5">
+                <h1 class="text-dark display-1 fw-bold">
+                  When nothing is going right, go left.
+                </h1>
+                <p class="mb-4 lead">
+                  I dig, you dig, we dig, he digs, she digs, they dig. Its not a
+                  beautiful poem, but it's very deep.
+                </p>
+                <div class="btn-group flex-wrap gap-3">
+                  <a href="/sign-in/" class="btn btn-primary rounded"
+                    >Sign In</a
+                  >
+                  <a href="/sign-up/" class="btn btn-white rounded"
+                    >Register Account</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-7 col-lg-6 col-md-12 d-flex justify-content-center"
+            >
+              <img
+                src="assets/images/hero-img-removebg-preview.png"
+                alt="Here image with modern technology"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <!-- Features Section -->
+          <div class="bg-white py-4 mt-5 shadow-sm rounded">
+            <div class="row align-items-center g-2">
+              <!-- Features -->
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
+                <div
+                  class="d-flex align-items-center justify-content-start ms-4"
+                >
+                  <div class="ms-0">
+                    <h3 class="mb-0 fw-semi-bold">One Great Title</h3>
+                    <p class="mb-0 me-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Features -->
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
+                <div
+                  class="d-flex align-items-center justify-content-start ms-4"
+                >
+                  <div class="ms-0">
+                    <h3 class="mb-0 fw-semi-bold">One Great Title</h3>
+                    <p class="mb-0 me-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Features -->
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-lg">
+                <div
+                  class="d-flex align-items-center justify-content-start ms-4"
+                >
+                  <div class="ms-0">
+                    <h3 class="mb-0 fw-semi-bold">One Great Title</h3>
+                    <p class="mb-0 me-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Content -->
+      <section class="pt-lg-8 pb-lg-8 pt-sm-4 pb-sm-4">
+        <div class="container-lg">
+          <div class="row d-flex justify-content-center px-lg-20 px-md-10 px-0">
             <div class="col">
-              <h2 class="display-3">Latest Posts</h2>
+              <h2 class="display-5 text-center pb-4">
+                Search something interesting
+              </h2>
+            </div>
+            <div class="input-group d-flex justify-content-center">
+              <input
+                type="search"
+                class="form-control rounded"
+                placeholder="Search something interesting"
+              />
+              <button class="btn btn-outline-primary btn-sm w-25">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="posts pt-lg-8 pb-lg-8 pt-sm-4 pb-sm-4">
+        <div class="container-lg">
+          <div class="row mb-4 d-flex flex-column">
+            <div class="col">
+              <h2 class="display-3">"Wall of Stuff"</h2>
             </div>
           </div>
           <div class="row">
             <!-- Row Item-->
-            <div class="item col-4 col-md-4 col-12 order-last ">
+            <div class="item col-4 col-md-4 col-12 order-last">
               <div class="col-auto rounded shadow-sm">
-                <div class="scroll-item bg-white border-end border-top ">
+                <div class="scroll-item bg-white border-end border-top">
                   <!-- Members Section -->
-                  <div class=" members" >
+                  <div class="members">
                     <div class="members-stiky-header sticky-top bg-white">
-                        <div class="px-4 py-4">
-                          <!-- Members Heading -->
-                          <div
-                            class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-                            <h3 class="mb-0">Create a post</h3>
-                            <!-- Modal Button -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
+                      <div class="px-4 py-4">
+                        <!-- Members Heading -->
+                        <div
+                          class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+                        >
+                          <h3 class="mb-0">Create a post</h3>
+                          <!-- Modal Button -->
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#postModal"
+                          >
                             Create Post
-                            </button>
-                          </div>     
-                          <!-- Search Members-->
-                          <div class="mt-4 mb-4">
-                            <input
-                              type="search"
-                              class="form-control form-control rounded"
-                              placeholder="Search members"
-                            />
+                          </button>
+                        </div>
+                        <!-- Search Members-->
+                        <div class="mt-4 mb-4">
+                          <input
+                            type="search"
+                            class="form-control form-control rounded"
+                            placeholder="Search members"
+                          />
+                        </div>
+                        <!-- Members List -->
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <!-- Logged in Member -->
+                          <a href="#" class="text-link">
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div class="avatar avatar-md">
+                                <img
+                                  src="/assets/avatars/img_me.jpg"
+                                  alt=""
+                                  class="rounded-circle"
+                                />
+                              </div>
+                              <div class="ms-2">
+                                <h4 class="mb-0">Robert D.B</h4>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- Dropdown Logged In Member Menu-->
+                          <div class="dropdown dropstart">
+                            <a
+                              href="#"
+                              class="text-link"
+                              id="userSetting"
+                              data-bs-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              ><img src="/assets/svg/three-dots.svg"
+                            /></a>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="userSetting"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Setting</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Sign Out</a>
+                              </li>
+                            </ul>
                           </div>
-                          <!-- Members List -->
-                          <div
-                            class="d-flex justify-content-between align-items-center">
-                            <!-- Logged in Member -->
-                            <a href="#" class="text-link">
-                              <div class="d-flex justify-content-between align-items-center gap-2">
-                                <div class="avatar avatar-md">
-                                  <img
-                                    src="/assets/avatars/img_me.jpg"
-                                    alt=""
-                                    class="rounded-circle"/>
+                        </div>
+                      </div>
+                      <!-- Member Navigation Tab -->
+                      <div>
+                        <h3 class="mb-4 px-4">Active members and teachers</h3>
+                      </div>
+                      <ul
+                        class="nav nav-line-bottom d-flex justify-content-center flex-wrap border-bottom border-top"
+                        id="tab"
+                        role="tablist"
+                      >
+                        <!-- Nav Item -->
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active py-2"
+                            id="member-tab"
+                            data-bs-toggle="pill"
+                            href="#member"
+                            role="tab"
+                            aria-controls="member"
+                            aria-selected="true"
+                            >Members</a
+                          >
+                        </li>
+                        <!-- Nav Item -->
+                        <li class="nav-item">
+                          <a
+                            class="nav-link py-2"
+                            id="teacher-tab"
+                            data-bs-toggle="pill"
+                            href="#teacher"
+                            role="tab"
+                            aria-controls="teacher"
+                            aria-selected="true"
+                            >Teachers</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div data-simplebar style="height: 100vh; overflow: auto">
+                      <!-- Tab Content -->
+                      <div class="tab-content" id="tabContent">
+                        <!-- Tab Members -->
+                        <div
+                          class="tab-pane active"
+                          id="member"
+                          role="tabpanel"
+                          aria-labelledby="member-tab"
+                        >
+                          <!-- Member Tab list -->
+                          <ul class="list-unstyled bg-white">
+                            <!-- Member Tab item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Danita Fiona</h4>
+                                  </div>
                                 </div>
-                                <div class=" ms-2">
-                                    <h4 class="mb-0">Robert D.B</h4>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
                                 </div>
                               </div>
-                            </a>                          
-                            <!-- Dropdown Logged In Member Menu-->
-                            <div class="dropdown dropstart">                            
-                              <a
-                                href="#"
-                                class="text-link"
-                                id="userSetting"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                ><img src="/assets/svg/three-dots.svg"></a>                             
-                              <ul
-                                class="dropdown-menu"
-                                aria-labelledby="userSetting">
-                                <li>
-                                  <a class="dropdown-item" href="#">Setting</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Profile</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Sign Out</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Eulalia Roydon</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Artie Dwain</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Barnabas Tolly</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Nicky Ash</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Samara Nicole</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Yasmin Natalee</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Lin Yum</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Pernel John Paul</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Rose Jasper</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Gerard Baxter</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Lorrie Curt</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Arin Shaye</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Armin Dole</h4>
+                                  </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
-                        <!-- Member Navigation Tab -->
-                        <div><h3 class="mb-4 px-4">Active members and teachers</h3></div>
-                        <ul class="nav nav-line-bottom d-flex justify-content-center flex-wrap border-bottom border-top" id="tab" role="tablist"   >
-                          <!-- Nav Item -->
-                          <li class="nav-item ">
-                            <a
-                              class="nav-link active py-2"
-                              id="member-tab"
-                              data-bs-toggle="pill"
-                              href="#member"
-                              role="tab"
-                              aria-controls="member"
-                              aria-selected="true"
-                              >Members</a>
-                          </li>
-                          <!-- Nav Item -->
-                          <li class="nav-item">
-                            <a
-                              class="nav-link py-2"
-                              id="teacher-tab"
-                              data-bs-toggle="pill"
-                              href="#teacher"
-                              role="tab"
-                              aria-controls="teacher"
-                              aria-selected="true"
-                              >Teachers</a>
-                          </li>
-                        </ul>
-                    </div>
-                    <div  data-simplebar style="height: 100vh; overflow: auto;">
-                        <!-- Tab Content -->
-                        <div class="tab-content" id="tabContent">
-                          <!-- Tab Members -->
-                          <div
-                            class="tab-pane active "
-                            id="member"
-                            role="tabpanel"
-                            aria-labelledby="member-tab">
-                            <!-- Member Tab list -->
-                            <ul class="list-unstyled bg-white">
-                              <!-- Member Tab item -->
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Danita Fiona</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                        <!-- Tab Teachers -->
+                        <div
+                          class="tab-pane active"
+                          id="member"
+                          role="tabpanel"
+                          aria-labelledby="member-tab"
+                        >
+                          <!-- Member Tab list -->
+                          <ul class="list-unstyled bg-white">
+                            <!-- Member Tab item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Eulalia Roydon</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Polly Rhianna</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Artie Dwain</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Barnabas Tolly</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Adeline Berniece</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Nicky Ash</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Samara Nicole</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Sigmund Indiana</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Yasmin Natalee</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Lin Yum</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Gloria Holden</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Pernel John Paul</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Rose Jasper</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Astor Ariah</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Gerard Baxter</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Lorrie Curt</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Karl Stu</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Arin Shaye</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member Tab -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Armin Dole</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Layne Tansy</h4>
                                   </div>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- Tab Teachers -->
-                          <div
-                            class="tab-pane active "
-                            id="member"
-                            role="tabpanel"
-                            aria-labelledby="member-tab">
-                            <!-- Member Tab list -->
-                            <ul class="list-unstyled bg-white">
-                              <!-- Member Tab item -->
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Polly Rhianna</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Adeline Berniece</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Seymour Anderson</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Sigmund Indiana</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Gloria Holden</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Paulie Austen</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Astor Ariah</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Karl Stu</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Cherilyn Rowley</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- Member Tab -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Layne Tansy</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Seymour Anderson</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Gerard Baxter</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Paulie Austen</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Cherilyn Rowley</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Nadia Ermintrude</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Gerard Baxter</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- List Item -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <!-- Member -->
+                                <div
+                                  class="d-flex justify-content-between align-items-center gap-2"
+                                >
+                                  <div class="avatar avatar-sm">
+                                    <img
+                                      src="/assets/svg/user.svg"
+                                      alt=""
+                                      class="rounded-circle"
+                                    />
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Nadia Ermintrude</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+                                  <div class="ms-2">
+                                    <h4 class="mb-0">Lorrie Loren</h4>
                                   </div>
-                              </li>
-                              <li class="py-4 px-4 border-bottom">
-                                <!-- List Item -->
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <!-- Member -->
-                                    <div class="d-flex justify-content-between align-items-center gap-2">
-                                      <div class="avatar avatar-sm">
-                                        <img
-                                          src="/assets/svg/user.svg"
-                                          alt=""
-                                          class="rounded-circle"/>
-                                      </div>
-                                      <div class=" ms-2">
-                                          <h4 class="mb-0">Lorrie Loren</h4>
-                                      </div>
-                                    </div>
-                                    <!-- Dropdown Member Settings-->
-                                    <div class="dropdown dropstart">
-                                      <a
-                                        href="#"
-                                        class="text-link"
-                                        id="userSetting"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        ><img src="/assets/svg/three-dots.svg">
-                                      </a>
-                                      <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="userSetting">
-                                        <li>
-                                          <a class="dropdown-item" href="#">See Profile</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#">Connect</a>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                              </li>
-                            </ul>
-                          </div>
+                                </div>
+                                <!-- Dropdown Member Settings-->
+                                <div class="dropdown dropstart">
+                                  <a
+                                    href="#"
+                                    class="text-link"
+                                    id="userSetting"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><img src="/assets/svg/three-dots.svg" />
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="userSetting"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >See Profile</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Connect</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
+                      </div>
                     </div>
-                   </div>
+                  </div>
                 </div>
               </div>
-					  </div>
+            </div>
             <!-- Row Item-->
-            <div class="item col-lg-8 col-md-8 col-12 ">
+            <div class="item col-lg-8 col-md-8 col-12">
               <!-- Card -->
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">Life is short, smile while you still have teeth</h3>
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img
+                      src="/assets/avatars/img_me.jpg"
+                      class="rounded-circle avatar-sm"
+                      alt=""
+                    />
+                    <h4 class="mb-0">Robert D.B</h4>
                   </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <h3 class="mb-2">
+                    Life is short, smile while you still have teeth
+                  </h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img
+                      class="w-100"
+                      src="./assets/images/portfolio-square-2.jpg"
+                      alt=""
+                    />
                   </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="d-flex mt-2 mb-2 w-100">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control rounded"
+                        placeholder="Place your bid"
+                      />
+                      <button class="btn btn-outline-primary btn-sm w-25">
+                        Bid
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">Whatever hits the fan will not be distributed evenly</h3>
+              </div>
+
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img
+                      src="/assets/avatars/img_me.jpg"
+                      class="rounded-circle avatar-sm"
+                      alt=""
+                    />
+                    <h4 class="mb-0">Robert D.B</h4>
                   </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <h3 class="mb-2">
+                    Whatever hits the fan will not be distributed evenly
+                  </h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img
+                      class="w-100"
+                      src="./assets/images/portfolio-square-2.jpg"
+                      alt=""
+                    />
                   </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="d-flex mt-2 mb-2 w-100">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control rounded"
+                        placeholder="Place your bid"
+                      />
+                      <button class="btn btn-outline-primary btn-sm w-25">
+                        Bid
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">When nothing goes right……..go left</h3>
+              </div>
+
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img
+                      src="/assets/avatars/img_me.jpg"
+                      class="rounded-circle avatar-sm"
+                      alt=""
+                    />
+                    <h4 class="mb-0">Robert D.B</h4>
                   </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <h3 class="mb-2">When nothing goes right……..go left</h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img
+                      class="w-100"
+                      src="./assets/images/portfolio-square-2.jpg"
+                      alt=""
+                    />
                   </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="d-flex mt-2 mb-2 w-100">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control rounded"
+                        placeholder="Place your bid"
+                      />
+                      <button class="btn btn-outline-primary btn-sm w-25">
+                        Bid
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">On the other hand, you have different fingers</h3>
+              </div>
+
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img
+                      src="/assets/avatars/img_me.jpg"
+                      class="rounded-circle avatar-sm"
+                      alt=""
+                    />
+                    <h4 class="mb-0">Robert D.B</h4>
                   </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                  <h3 class="mb-2">
+                    On the other hand, you have different fingers
+                  </h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img
+                      class="w-100"
+                      src="./assets/images/portfolio-square-2.jpg"
+                      alt=""
+                    />
                   </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="d-flex mt-2 mb-2 w-100">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control rounded"
+                        placeholder="Place your bid"
+                      />
+                      <button class="btn btn-outline-primary btn-sm w-25">
+                        Bid
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">Your mouth is a key of your health</h3>
-                  </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
+              </div>
+
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <h3 class="mb-2">Your mouth is a key of your health</h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <p class="mb-3 card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Repellendus magnam, iste cupiditate molestiae illo suscipit
+                    eum mollitia, exercitationem hic corporis dolorem quo nobis
+                    distinctio quis quod. Ea iure aut voluptatem.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >Read More</a
+                  >
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="row d-flex gap-2 flex-wrap">
+                    <div class="col-auto d-flex align-items-center gap-2">
+                      <img
+                        src="/assets/avatars/img_me.jpg"
+                        class="rounded-circle avatar-sm"
+                        alt=""
+                      />
+                      <h4 class="mb-0">Robert D.B</h4>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                      <a href="#" class="card-footer-icons">
+                        <img src="/assets/svg/share-fill.svg" />
+                      </a>
+                      <img href="#" class="card-footer-icons" />
+                      <a href="#">
+                        <img src="/assets/svg/heart.svg" />
+                      </a>
+                      <a href="/profile/" class="card-link small">
+                        See Profile
+                      </a>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
         <!-- Modal Start -->
-        <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header ">
-                  <h4 class="modal-title ms-2" id="postModalLabel">Use this form to create a new post</h4>
-                  <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">               
-                  <div class="row">                       
-                      <div class="col-12">                           
-                        <h1 class="mb-2">Create post</h1>                         
-                        <form action="/" method="GET">                             
-                              <div class="form-group">
-                                  <label for="subject">Subject <span class="require">*</span></label>
-                                  <input type="text" class="form-control mb-4" name="subject"required/>
-                              </div>                             
-                              <div class="form-group">
-                                  <label for="description">Post Content <span class="require">*</span></label>
-                                  <textarea rows="5" class="form-control mb-4" name="description"required ></textarea>
-                              </div>
-                              <div class="modal-footer d-flex justify-content-start border-top-0 p-0">
-                                <button type="submit" class="btn btn-primary">Create Posts</button>
-                                <button type="submit" class="btn btn-link" data-bs-dismiss="modal">Cancel</button>
-                              </div>                             
-                        </form>
-                      </div>                     
-                  </div>            
+        <div
+          class="modal fade"
+          id="postModal"
+          tabindex="-1"
+          aria-labelledby="postModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title ms-2" id="postModalLabel">
+                  Use this form to create a new post
+                </h4>
+                <button
+                  type="button"
+                  class="btn-close ms-auto"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h1 class="mb-2">Create post</h1>
+                    <form action="/" method="GET">
+                      <div class="form-group">
+                        <label for="subject"
+                          >Subject <span class="require">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          name="subject"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="description"
+                          >Post Content <span class="require">*</span></label
+                        >
+                        <textarea
+                          rows="5"
+                          class="form-control mb-4"
+                          name="description"
+                          required
+                        ></textarea>
+                      </div>
+                      <div
+                        class="modal-footer d-flex justify-content-start border-top-0 p-0"
+                      >
+                        <button type="submit" class="btn btn-primary">
+                          Create Posts
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-link"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-        <!-- Modal End -->        
-      </div>  
-    </section>
+        <!-- Modal End -->
+      </section>
+    </main>
 
     <!-- footer -->
     <footer class="footer bg-white mt-lg-8 mt-md-4">
       <div class="container-lg">
-
         <!-- Footer Body -->
         <div class="row d--flex align-items-center justify-content-center">
           <div class="col-6 col-md-6 col-12 d-flex flex-column mb-4 mt-8">
             <!-- About-->
-              <div class="d-flex align-items-center justify-content-center">
-                <img src="/assets/brand/dev.squid.png" class="brand-footer" alt="" />
-              </div>
-              <div class="mt-4 text-center">
-                <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui numquam suscipit corporis enim. Unde suscipit nemo odio quis iure.
-                </p>
-              </div>
-           
+            <div class="d-flex align-items-center justify-content-center">
+              <img
+                src="/assets/brand/falling-poets.png"
+                class="brand-footer"
+                alt=""
+              />
+            </div>
+            <div class="mt-4 text-center">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur qui numquam suscipit corporis enim. Unde suscipit
+                nemo odio quis iure.
+              </p>
+            </div>
           </div>
         </div>
-           <!-- Footer Bottom-->
+        <!-- Footer Bottom-->
         <div class="row align-items-center g-0 border-top py-2 mt-4">
           <div class="col-12">
             <nav class="nav nav-footer d--flex justify-content-center">
@@ -1563,7 +1995,15 @@
         </div>
       </div>
     </footer>
-   
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
   </body>
+</html>
+
+<html>
+  <h3>fdsfsdfsd</h3>
+  <div>
+    <h4>dfsdfsdf</h4>
+  </div>
 </html>
