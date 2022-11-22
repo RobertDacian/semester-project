@@ -1,4 +1,5 @@
 {
+	// Live-server extension port
 	"liveServer.settings.port": 5501,
 	// START: Settings for Eslint and Prettier
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
