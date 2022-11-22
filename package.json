@@ -17,7 +17,12 @@
 		"type": "git",
 		"url": "git+https://github.com/RobertDacian/semester-project.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"HTML",
+		"CSS",
+		"JS",
+		"semester-project"
+	],
 	"author": "Robert Dacian But",
 	"license": "ISC",
 	"dependencies": {
