@@ -1,3 +1,36 @@
 {
-  "liveServer.settings.port": 5501
+	"liveServer.settings.port": 5501,
+	// START: Settings for Eslint and Prettier
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[javascript]": {
+		"editor.formatOnSave": false
+	},
+	// "[javascriptreact]": {
+	// 	"editor.formatOnSave": false
+	// },
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"eslint.alwaysShowStatus": true,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	// START: Settings for Prettier
+	"prettier.useTabs": true,
+	"prettier.jsxSingleQuote": false,
+	"prettier.tabWidth": 2,
+	"prettier.arrowParens": "avoid",
+	"prettier.singleQuote": true,
+	"html.format.enable": true,
+	"html.format.unformatted": "",
+	"html.format.contentUnformatted": ""
 }
