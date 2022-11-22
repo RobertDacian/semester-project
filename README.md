@@ -57,7 +57,7 @@ npm install
 README.md
 ```
 
-- Created project folder and file structure.
+- Created project folder and file structure for the project.
 
 ```
 HTML, CSS and JS
