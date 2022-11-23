@@ -190,3 +190,11 @@ npx mrm@2 lint-staged
 ```
 "version": "1.0.2"
 ```
+
+- Finished the homepage structure.
+
+- Version updated to 1.0.3
+
+```
+"version": "1.0.3"
+```
