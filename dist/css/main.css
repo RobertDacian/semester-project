@@ -84,10 +84,12 @@ form .form-wrapper {
 .nav-tabs .nav-item .nav-link {
   background-color: transparent !important;
   color: #754ffe;
+  border: transparent !important;
 }
 
 .nav-tabs .nav-item .nav-link.active {
   color: #18113c;
+  text-decoration: underline;
 }
 
 .navbar .navbar-nav .nav-link {
