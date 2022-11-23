@@ -193,6 +193,10 @@ npx mrm@2 lint-staged
 
 - Finished the homepage structure.
 
+- Deployed to GitHub pages
+
+[![Deploy static content to Pages](https://github.com/RobertDacian/semester-project/actions/workflows/main.yml/badge.svg)](https://github.com/RobertDacian/semester-project/actions/workflows/main.yml)
+
 - Version updated to 1.0.3
 
 ```
