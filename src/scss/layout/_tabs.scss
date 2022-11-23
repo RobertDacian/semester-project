@@ -1,0 +1,10 @@
+// Tabs Styling
+
+.nav-tabs .nav-item .nav-link {
+  background-color: transparent !important;
+  color: $primary;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: $dark;
+}
