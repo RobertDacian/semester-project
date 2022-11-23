@@ -1,6 +1,6 @@
 {
 	"name": "semester-project",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "school-project",
 	"type": "module",
 	"main": "index.js",
