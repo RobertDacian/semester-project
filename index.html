@@ -13,47 +13,43 @@
     <header>
       <!-- Navbar -->
       <nav
-        class="navbar navbar-transparent navbar-expand-lg pt-lg-2 pt-md-2 pt-2 border-bottom"
+        class="navbar navbar-transparent navbar-expand-lg pt-lg-2 pt-md-2 pt-2"
       >
         <div class="container-lg">
-          <a class="navbar-brand" href="./"
-            ><img src="./assets/brand/falling-poets.png" alt=""
-          /></a>
+          <div
+            class="d-flex justify-content-center align-items-center flex-column w-100"
+          >
+            <a class="navbar-brand mb-4" href="./"
+              ><img src="./assets/brand/falling-poets.png" alt=""
+            /></a>
+            <div>
+              <h2 class="text-danger">Please log in to bid in any auction.</h2>
+            </div>
+          </div>
 
           <!-- Hamburger Button -->
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-default"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="icon-bar top-bar mt-0"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
+          <!-- <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="icon-bar top-bar mt-0"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button> -->
           <!-- Nav Collapse -->
-          <div
-            class="collapse navbar-collapse mt-lg-0 mt-md-4 mt-4"
-            id="navbar-default"
-          >
-            <ul
-              class="navbar-nav d-flex justify-content-lg-end align-items-center align-items-center w-100"
-            >
-              <li class="nav-item">
-                <a class="nav-link active" href="./">Home</a>
-              </li>
+          <!-- <div class="collapse navbar-collapse mt-lg-0 mt-md-4 mt-4" id="navbar-default">
+          <ul class="navbar-nav d-flex justify-content-lg-end align-items-center align-items-center w-100">
+            <li class="nav-item">
+              <a class="nav-link active" href="./">Home</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="./profile/">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./">Sign Out</a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link" href="./profile/">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./">Sign Out</a>
+            </li>
+          </ul>
+        </div> -->
         </div>
       </nav>
     </header>
@@ -61,6 +57,7 @@
       <!-- Hero Section -->
       <section class="hero bg-transparent pt-8 pb-8">
         <div class="container-lg">
+          <!-- Hero Content -->
           <div
             class="row flex-lg-row align-items-center flex-md-column-reverse"
           >
@@ -83,6 +80,7 @@
                 </div>
               </div>
             </div>
+            <!-- Hero Img -->
             <div
               class="col-xl-7 col-lg-6 col-md-12 d-flex justify-content-center"
             >
@@ -93,7 +91,7 @@
               />
             </div>
           </div>
-          <!-- Features Section -->
+          <!-- Hero Features -->
           <div class="bg-white py-4 mt-5 shadow-sm rounded">
             <div class="row align-items-center g-2">
               <!-- Features -->
@@ -139,16 +137,19 @@
           </div>
         </div>
       </section>
-      <!-- Content -->
+
+      <!-- Search Section -->
       <section class="pt-lg-8 pb-lg-8 pt-sm-4 pb-sm-4">
         <div class="container-lg">
           <div class="row d-flex justify-content-center px-lg-20 px-md-10 px-0">
+            <!-- Search Section Intro -->
             <div class="col">
               <h2 class="display-5 text-center pb-4">
                 Search something interesting
               </h2>
             </div>
-            <div class="input-group d-flex justify-content-center">
+            <!-- Search Section Form -->
+            <form action="" class="input-group d-flex justify-content-center">
               <input
                 type="search"
                 class="form-control rounded"
@@ -157,27 +158,30 @@
               <button class="btn btn-outline-primary btn-sm w-25">
                 Search
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
-      <section class="posts pt-lg-8 pb-lg-8 pt-sm-4 pb-sm-4">
+      <!-- Listing Section -->
+      <section class="posts pt-lg-8 pb-lg-8 pt-4 pb-sm-4">
         <div class="container-lg">
           <div class="row mb-4 d-flex flex-column">
+            <!-- Listing Section Intro -->
             <div class="col">
               <h2 class="display-3">"Wall of Stuff"</h2>
             </div>
           </div>
+          <!-- Listing Section and Aside Row -->
           <div class="row">
-            <!-- Row Item-->
+            <!-- Row Item Aside-->
             <div class="item col-4 col-md-4 col-12 order-last">
               <div class="col-auto rounded shadow-sm">
                 <div class="scroll-item bg-white border-end border-top">
-                  <!-- Members Section -->
+                  <!-- Members and Popular Section Content -->
                   <div class="members">
                     <div class="members-stiky-header sticky-top bg-white">
+                      <!-- Section Intro -->
                       <div class="px-4 py-4">
-                        <!-- Members Heading -->
                         <div
                           class="d-flex justify-content-between align-items-center flex-wrap gap-2"
                         >
@@ -192,26 +196,20 @@
                             Create Auction
                           </button>
                         </div>
-                        <!-- Search Members-->
-                        <div class="mt-4 mb-4">
-                          <input
-                            type="search"
-                            class="form-control form-control rounded"
-                            placeholder="Search members"
-                          />
-                        </div>
-                        <!-- Members List -->
+                        <!-- Logged in Member -->
                         <div
-                          class="d-flex justify-content-between align-items-center"
+                          class="d-flex justify-content-start align-items-start flex-column mt-4"
                         >
-                          <!-- Logged in Member -->
+                          <div class="text-success">
+                            <p>Logged in as:</p>
+                          </div>
                           <a href="#" class="text-link">
                             <div
                               class="d-flex justify-content-between align-items-center gap-2"
                             >
                               <div class="avatar avatar-md">
                                 <img
-                                  src="/assets/avatars/img_me.jpg"
+                                  src="./assets/avatars/img_me.jpg"
                                   alt=""
                                   class="rounded-circle"
                                 />
@@ -223,18 +221,19 @@
                           </a>
                         </div>
                       </div>
-                      <!-- Member Navigation Tab -->
+                      <!-- Tabs Intro -->
                       <div>
                         <h3 class="mb-4 px-4">
                           Active members and popular bids
                         </h3>
                       </div>
+                      <!-- Tabs Navigation -->
                       <ul
-                        class="nav nav-line-bottom d-flex justify-content-center flex-wrap border-bottom border-top"
+                        class="nav nav-tabs nav-line-bottom d-flex justify-content-center flex-wrap border-bottom border-top"
                         id="tab"
                         role="tablist"
                       >
-                        <!-- Nav Item -->
+                        <!-- Nav Nav Item -->
                         <li class="nav-item">
                           <a
                             class="nav-link active py-2"
@@ -247,989 +246,241 @@
                             >Members</a
                           >
                         </li>
-                        <!-- Nav Item -->
+                        <!-- Nav Nav Item -->
                         <li class="nav-item">
                           <a
                             class="nav-link py-2"
-                            id="teacher-tab"
+                            id="popular-tab"
                             data-bs-toggle="pill"
-                            href="#teacher"
+                            href="#popular"
                             role="tab"
-                            aria-controls="teacher"
-                            aria-selected="true"
-                            >Teachers</a
+                            aria-controls="popular"
+                            aria-selected="false"
+                            >Popular</a
                           >
                         </li>
                       </ul>
                     </div>
+                    <!-- Tabs -->
                     <div data-simplebar style="height: 100vh; overflow: auto">
-                      <!-- Tab Content -->
                       <div class="tab-content" id="tabContent">
-                        <!-- Tab Members -->
+                        <!-- Members Tab -->
                         <div
-                          class="tab-pane active"
+                          class="tab-pane fade show active"
                           id="member"
                           role="tabpanel"
                           aria-labelledby="member-tab"
                         >
-                          <!-- Member Tab list -->
+                          <!-- Members List -->
                           <ul class="list-unstyled bg-white">
-                            <!-- Member Tab item -->
+                            <!-- Search Form-->
+                            <form action="" class="mt-4 py-4 px-4">
+                              <input
+                                type="search"
+                                class="form-control form-control rounded"
+                                placeholder="Search members"
+                              />
+                            </form>
+                            <!-- Member List Item -->
                             <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
+                              <!-- Member -->
                               <div
                                 class="d-flex justify-content-between align-items-center"
                               >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
+                                <a href="#" class="text-link">
+                                  <div
+                                    class="d-flex justify-content-between align-items-center gap-2"
+                                  >
+                                    <div class="avatar avatar-sm">
+                                      <img
+                                        src="./assets/svg/user.svg"
+                                        alt=""
+                                        class="rounded-circle"
+                                      />
+                                    </div>
+                                    <div class="ms-2">
+                                      <h4 class="mb-0">Member One</h4>
+                                    </div>
                                   </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Danita Fiona</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
+                                </a>
                               </div>
                             </li>
+                            <!-- Member List Item -->
                             <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
+                              <!-- Member -->
                               <div
                                 class="d-flex justify-content-between align-items-center"
                               >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Eulalia Roydon</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
+                                <a href="#" class="text-link">
+                                  <div
+                                    class="d-flex justify-content-between align-items-center gap-2"
                                   >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
+                                    <div class="avatar avatar-sm">
+                                      <img
+                                        src="./assets/svg/user.svg"
+                                        alt=""
+                                        class="rounded-circle"
+                                      />
+                                    </div>
+                                    <div class="ms-2">
+                                      <h4 class="mb-0">Member Two</h4>
+                                    </div>
+                                  </div>
+                                </a>
                               </div>
                             </li>
+                            <!-- Member List Item -->
                             <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
+                              <!-- Member -->
                               <div
                                 class="d-flex justify-content-between align-items-center"
                               >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Artie Dwain</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
+                                <a href="#" class="text-link">
+                                  <div
+                                    class="d-flex justify-content-between align-items-center gap-2"
                                   >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
+                                    <div class="avatar avatar-sm">
+                                      <img
+                                        src="./assets/svg/user.svg"
+                                        alt=""
+                                        class="rounded-circle"
+                                      />
+                                    </div>
+                                    <div class="ms-2">
+                                      <h4 class="mb-0">Member Three</h4>
+                                    </div>
                                   </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Barnabas Tolly</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Nicky Ash</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Samara Nicole</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Yasmin Natalee</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Lin Yum</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Pernel John Paul</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Rose Jasper</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Gerard Baxter</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Lorrie Curt</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Arin Shaye</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Armin Dole</h4>
-                                  </div>
-                                </div>
-                                <!-- Dropdown Member Settings-->
-                                <div class="dropdown dropstart">
-                                  <a
-                                    href="#"
-                                    class="text-link"
-                                    id="userSetting"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><img src="/assets/svg/three-dots.svg" />
-                                  </a>
-                                  <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="userSetting"
-                                  >
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >See Profile</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#"
-                                        >Connect</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
+                                </a>
                               </div>
                             </li>
                           </ul>
                         </div>
-                        <!-- Tab Teachers -->
+                        <!-- Popular Bids Tab -->
                         <div
-                          class="tab-pane active"
-                          id="member"
+                          class="tab-pane fade"
+                          id="popular"
                           role="tabpanel"
-                          aria-labelledby="member-tab"
+                          aria-labelledby="popular-tab"
                         >
-                          <!-- Member Tab list -->
+                          <!-- Popular Bids list -->
                           <ul class="list-unstyled bg-white">
-                            <!-- Member Tab item -->
+                            <!-- Popular Bids List Item -->
                             <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
+                              <!-- Popular Bids Card Header Content -->
+                              <div class="card-header">
                                 <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
+                                  class="col-auto d-flex align-items-center gap-2 mb-3"
                                 >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Polly Rhianna</h4>
-                                  </div>
+                                  <img
+                                    src="./assets/avatars/img_me.jpg"
+                                    class="rounded-circle avatar-sm"
+                                    alt=""
+                                  />
+                                  <h4 class="mb-0">Robert D.B</h4>
+                                </div>
+                                <h3 class="mb-2">
+                                  Life is short, smile while you still have
+                                  teeth
+                                </h3>
+                              </div>
+                              <!-- Popular Bids Card Body Content -->
+                              <div class="card-body mt-0 d-flex flex-column">
+                                <div class="w-100">
+                                  <img
+                                    class="w-100"
+                                    src="./assets/images/portfolio-square-2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <p class="mt-lg-3 mt-3 ms-0 card-text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Repellendus magnam, iste
+                                    cupiditate molestiae illo suscipit eum
+                                    mollitia, exercitationem hic corporis
+                                    dolorem quo nobis distinctio quis quod. Ea
+                                    iure aut voluptatem.
+                                  </p>
                                 </div>
                               </div>
                             </li>
+                            <!-- Popular Bids List Item -->
                             <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
+                              <!-- Popular Bids Card Header Content -->
+                              <div class="card-header">
                                 <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
+                                  class="col-auto d-flex align-items-center gap-2 mb-3"
                                 >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Adeline Berniece</h4>
-                                  </div>
+                                  <img
+                                    src="./assets/avatars/img_me.jpg"
+                                    class="rounded-circle avatar-sm"
+                                    alt=""
+                                  />
+                                  <h4 class="mb-0">Robert D.B</h4>
+                                </div>
+                                <h3 class="mb-2">
+                                  Life is short, smile while you still have
+                                  teeth
+                                </h3>
+                              </div>
+                              <!-- Popular Bids Card Body Content -->
+                              <div class="card-body mt-0 d-flex flex-column">
+                                <div class="w-100">
+                                  <img
+                                    class="w-100"
+                                    src="./assets/images/portfolio-square-2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <p class="mt-lg-3 mt-3 ms-0 card-text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Repellendus magnam, iste
+                                    cupiditate molestiae illo suscipit eum
+                                    mollitia, exercitationem hic corporis
+                                    dolorem quo nobis distinctio quis quod. Ea
+                                    iure aut voluptatem.
+                                  </p>
                                 </div>
                               </div>
                             </li>
+                            <!-- Popular Bids List Item -->
                             <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
+                              <!-- Popular Bids Card Header Content -->
+                              <div class="card-header">
                                 <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
+                                  class="col-auto d-flex align-items-center gap-2 mb-3"
                                 >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Sigmund Indiana</h4>
-                                  </div>
+                                  <img
+                                    src="./assets/avatars/img_me.jpg"
+                                    class="rounded-circle avatar-sm"
+                                    alt=""
+                                  />
+                                  <h4 class="mb-0">Robert D.B</h4>
                                 </div>
+                                <h3 class="mb-2">
+                                  Life is short, smile while you still have
+                                  teeth
+                                </h3>
                               </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Gloria Holden</h4>
-                                  </div>
+                              <!-- Popular Bids Card Body Content -->
+                              <div class="card-body mt-0 d-flex flex-column">
+                                <div class="w-100">
+                                  <img
+                                    class="w-100"
+                                    src="./assets/images/portfolio-square-2.jpg"
+                                    alt=""
+                                  />
                                 </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Astor Ariah</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Karl Stu</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- Member Tab -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Layne Tansy</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Seymour Anderson</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Paulie Austen</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Cherilyn Rowley</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Gerard Baxter</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Nadia Ermintrude</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="py-4 px-4 border-bottom">
-                              <!-- List Item -->
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <!-- Member -->
-                                <div
-                                  class="d-flex justify-content-between align-items-center gap-2"
-                                >
-                                  <div class="avatar avatar-sm">
-                                    <img
-                                      src="/assets/svg/user.svg"
-                                      alt=""
-                                      class="rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="ms-2">
-                                    <h4 class="mb-0">Lorrie Loren</h4>
-                                  </div>
+                                <div>
+                                  <p class="mt-lg-3 mt-3 ms-0 card-text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Repellendus magnam, iste
+                                    cupiditate molestiae illo suscipit eum
+                                    mollitia, exercitationem hic corporis
+                                    dolorem quo nobis distinctio quis quod. Ea
+                                    iure aut voluptatem.
+                                  </p>
                                 </div>
                               </div>
                             </li>
@@ -1241,7 +492,7 @@
                 </div>
               </div>
             </div>
-            <!-- Row Item-->
+            <!-- Row Item Listings -->
             <div class="item col-lg-8 col-md-8 col-12">
               <!-- Card -->
               <div class="card mb-4 shadow-sm rounded">
@@ -1249,7 +500,7 @@
                 <div class="card-header">
                   <div class="col-auto d-flex align-items-center gap-2 mb-3">
                     <img
-                      src="/assets/avatars/img_me.jpg"
+                      src="./assets/avatars/img_me.jpg"
                       class="rounded-circle avatar-sm"
                       alt=""
                     />
@@ -1293,20 +544,20 @@
                   </div>
                 </div>
               </div>
-
+              <!-- Card -->
               <div class="card mb-4 shadow-sm rounded">
                 <!-- Card Header -->
                 <div class="card-header">
                   <div class="col-auto d-flex align-items-center gap-2 mb-3">
                     <img
-                      src="/assets/avatars/img_me.jpg"
+                      src="./assets/avatars/img_me.jpg"
                       class="rounded-circle avatar-sm"
                       alt=""
                     />
                     <h4 class="mb-0">Robert D.B</h4>
                   </div>
                   <h3 class="mb-2">
-                    Whatever hits the fan will not be distributed evenly
+                    Life is short, smile while you still have teeth
                   </h3>
                 </div>
                 <!-- Card Body -->
@@ -1332,7 +583,7 @@
                   <div class="d-flex mt-2 mb-2 w-100">
                     <div class="input-group">
                       <input
-                        type="text"
+                        type="number"
                         class="form-control rounded"
                         placeholder="Place your bid"
                       />
@@ -1343,68 +594,20 @@
                   </div>
                 </div>
               </div>
-
+              <!-- Card -->
               <div class="card mb-4 shadow-sm rounded">
                 <!-- Card Header -->
                 <div class="card-header">
                   <div class="col-auto d-flex align-items-center gap-2 mb-3">
                     <img
-                      src="/assets/avatars/img_me.jpg"
-                      class="rounded-circle avatar-sm"
-                      alt=""
-                    />
-                    <h4 class="mb-0">Robert D.B</h4>
-                  </div>
-                  <h3 class="mb-2">When nothing goes right……..go left</h3>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
-                  <div class="w-100">
-                    <img
-                      class="w-100"
-                      src="./assets/images/portfolio-square-2.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Repellendus magnam, iste cupiditate molestiae illo
-                      suscipit eum mollitia, exercitationem hic corporis dolorem
-                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
-                    </p>
-                  </div>
-                </div>
-                <!-- Card Footer -->
-                <div class="card-footer">
-                  <div class="d-flex mt-2 mb-2 w-100">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control rounded"
-                        placeholder="Place your bid"
-                      />
-                      <button class="btn btn-outline-primary btn-sm w-25">
-                        Bid
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-4 shadow-sm rounded">
-                <!-- Card Header -->
-                <div class="card-header">
-                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
-                    <img
-                      src="/assets/avatars/img_me.jpg"
+                      src="./assets/avatars/img_me.jpg"
                       class="rounded-circle avatar-sm"
                       alt=""
                     />
                     <h4 class="mb-0">Robert D.B</h4>
                   </div>
                   <h3 class="mb-2">
-                    On the other hand, you have different fingers
+                    Life is short, smile while you still have teeth
                   </h3>
                 </div>
                 <!-- Card Body -->
@@ -1430,57 +633,13 @@
                   <div class="d-flex mt-2 mb-2 w-100">
                     <div class="input-group">
                       <input
-                        type="text"
+                        type="number"
                         class="form-control rounded"
                         placeholder="Place your bid"
                       />
                       <button class="btn btn-outline-primary btn-sm w-25">
                         Bid
                       </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-4 shadow-sm rounded">
-                <!-- Card Header -->
-                <div class="card-header">
-                  <h3 class="mb-2">Your mouth is a key of your health</h3>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <p class="mb-3 card-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Repellendus magnam, iste cupiditate molestiae illo suscipit
-                    eum mollitia, exercitationem hic corporis dolorem quo nobis
-                    distinctio quis quod. Ea iure aut voluptatem.
-                  </p>
-                  <a href="#" class="btn btn-outline-primary btn-sm"
-                    >Read More</a
-                  >
-                </div>
-                <!-- Card Footer -->
-                <div class="card-footer">
-                  <div class="row d-flex gap-2 flex-wrap">
-                    <div class="col-auto d-flex align-items-center gap-2">
-                      <img
-                        src="/assets/avatars/img_me.jpg"
-                        class="rounded-circle avatar-sm"
-                        alt=""
-                      />
-                      <h4 class="mb-0">Robert D.B</h4>
-                    </div>
-                    <div class="col-auto d-flex align-items-center">
-                      <a href="#" class="card-footer-icons">
-                        <img src="/assets/svg/share-fill.svg" />
-                      </a>
-                      <img href="#" class="card-footer-icons" />
-                      <a href="#">
-                        <img src="/assets/svg/heart.svg" />
-                      </a>
-                      <a href="/profile/" class="card-link small">
-                        See Profile
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -1513,7 +672,7 @@
                 <div class="row">
                   <div class="col-12">
                     <h1 class="mb-2">Create Auction</h1>
-                    <form action="/" method="GET">
+                    <form action="./" method="GET">
                       <div class="form-group">
                         <label for="subject"
                           >Subject <span class="require">*</span></label
@@ -1570,7 +729,7 @@
             <!-- About-->
             <div class="d-flex align-items-center justify-content-center">
               <img
-                src="/assets/brand/falling-poets.png"
+                src="./assets/brand/falling-poets.png"
                 class="brand-footer"
                 alt=""
               />
@@ -1582,6 +741,27 @@
                 nemo odio quis iure.
               </p>
             </div>
+            <nav>
+              <ul
+                class="navbar navbar-nav d-flex flex-row justify-content-center align-items-center gap-4 w-100"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-decoration-underline active"
+                    aria-current="page"
+                    href="./"
+                    >Home</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="./profile/">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="./">Sign Out</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
         <!-- Footer Bottom-->

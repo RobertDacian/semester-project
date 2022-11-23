@@ -1,0 +1,12 @@
+// Tabs styling
+
+.nav-tabs .nav-item .nav-link {
+  background-color: transparent !important;
+  color: $primary;
+  border: transparent !important;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: $dark;
+  text-decoration: underline;
+}
