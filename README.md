@@ -218,3 +218,11 @@ npx mrm@2 lint-staged
 ```
 "version": "1.0.5"
 ```
+
+- Finished profile pages structure and styling
+
+- Version updated to 1.0.6
+
+```
+"version": "1.0.6"
+```
