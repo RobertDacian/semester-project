@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falling Poets | Auction House</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="/src/js/main.js" defer type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-transparent navbar-expand-lg pt-lg-4 pt-md-4 pt-2 w-100"
+      >
+        <div class="container-lg">
+          <a class="navbar-brand p-0 me-03" href="/auction-house/"
+            ><img src="/assets/brand/falling-poets.png" alt=""
+          /></a>
+          <ul class="navbar-nav navbar-right-wrap d-lg-none ms-auto me-0">
+            <!-- <li class="nav-item">
+            <a class="nav-link" href="./profile/">Profile</a>
+          </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="../">Sign Out</a>
+            </li>
+          </ul>
+          <!-- Hamburger Button -->
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-default"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar mt-0"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <!-- Nav Collapse -->
+          <div
+            class="collapse navbar-collapse justify-content-end mt-lg-0 mt-md-4 mt-4"
+            id="navbar-default"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="/auction-house/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-lg-block d-none" href="/">Sign Out</a>
+              </li>
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="./sign-in/">Sign Out</a>
+            </li> -->
+            </ul>
+
+            <ul class="navbar-nav navbar-right-wrap d-lg-flex d-none">
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="./profile/">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sign-in/">Sign Out</a>
+            </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero bg-transparent pt-8 pb-8">
+        <div class="container-lg">
+          <!-- Hero Content -->
+          <div
+            class="row flex-lg-row align-items-center flex-md-column-reverse"
+          >
+            <div class="col-xl-5 col-lg-6 col-md-12 order-md-first order-last">
+              <div class="py-5">
+                <h1 class="text-dark display-1 fw-bold">
+                  When nothing is going right, go left.
+                </h1>
+                <p class="mb-4 lead">
+                  I dig, you dig, we dig, he digs, she digs, they dig. Its not a
+                  beautiful poem, but it's very deep.
+                </p>
+                <div class="btn-group flex-wrap gap-3">
+                  <a href="/sign-in/" class="btn btn-primary rounded"
+                    >Sign In</a
+                  >
+                  <a href="/sign-up/" class="btn btn-white rounded"
+                    >Register Account</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Hero Img -->
+            <div
+              class="col-xl-7 col-lg-6 col-md-12 d-flex justify-content-center"
+            >
+              <img
+                src="/assets/images/hero-img-removebg-preview.png"
+                alt="Here image with modern technology"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <!-- Hero Features -->
+          <div class="bg-white py-4 mt-5 shadow-sm rounded">
+            <div class="row align-items-center g-2">
+              <!-- Features -->
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
+                <div
+                  class="d-flex align-items-center justify-content-start ms-4"
+                >
+                  <div class="ms-0">
+                    <h3 class="mb-0 fw-semi-bold">One Great Title</h3>
+                    <p class="mb-0 me-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Features -->
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
+                <div
+                  class="d-flex align-items-center justify-content-start ms-4"
+                >
+                  <div class="ms-0">
+                    <h3 class="mb-0 fw-semi-bold">One Great Title</h3>
+                    <p class="mb-0 me-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Features -->
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-lg">
+                <div
+                  class="d-flex align-items-center justify-content-start ms-4"
+                >
+                  <div class="ms-0">
+                    <h3 class="mb-0 fw-semi-bold">One Great Title</h3>
+                    <p class="mb-0 me-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Section -->
+      <section class="pt-lg-8 pb-lg-8 pt-sm-4 pb-sm-4">
+        <div class="container-lg">
+          <div class="row d-flex justify-content-center px-lg-20 px-md-10 px-0">
+            <!-- Search Section Intro -->
+            <div class="col">
+              <h2 class="display-5 text-center pb-4">
+                Search something interesting
+              </h2>
+            </div>
+            <!-- Search Section Form -->
+            <form action="" class="input-group d-flex justify-content-center">
+              <input
+                type="search"
+                class="form-control rounded"
+                placeholder="Search something interesting"
+              />
+              <button class="btn btn-outline-primary btn-sm w-25">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Listing Section -->
+      <section class="posts pt-lg-8 pb-lg-8 pt-4 pb-sm-4">
+        <div class="container-lg">
+          <div class="row mb-4 d-flex flex-column">
+            <!-- Listing Section Intro -->
+            <div class="col">
+              <h2 class="display-3">"Wall of Stuff"</h2>
+            </div>
+          </div>
+          <!-- Listing Section and Aside Row -->
+          <div class="row">
+            <!-- Row Item Aside-->
+            <div class="item col-4 col-md-4 col-12 order-last">
+              <div class="col-auto rounded shadow-sm">
+                <div class="scroll-item bg-white border-end border-top">
+                  <!-- Members and Popular Section Content -->
+                  <div class="members">
+                    <div class="members-stiky-header sticky-top bg-white">
+                      <!-- Section Intro -->
+                      <div class="px-4 py-4">
+                        <div
+                          class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+                        >
+                          <h3 class="mb-0">Create an auction</h3>
+                          <!-- Modal Button -->
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#auctionModal"
+                          >
+                            Create Auction
+                          </button>
+                        </div>
+                        <!-- Logged in Member -->
+                        <div
+                          class="d-flex justify-content-start align-items-start flex-column mt-4"
+                        >
+                          <div class="text-success">
+                            <p>Logged in as:</p>
+                          </div>
+                          <a href="#" class="text-link">
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div class="avatar avatar-md">
+                                <img
+                                  src="./assets/avatars/img_me.jpg"
+                                  alt=""
+                                  class="rounded-circle"
+                                />
+                              </div>
+                              <div class="ms-2">
+                                <h4 class="mb-0">Robert D.B</h4>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- Tabs Intro -->
+                      <div>
+                        <h3 class="mb-4 px-4">
+                          Active members and popular bids
+                        </h3>
+                      </div>
+                      <!-- Tabs Navigation -->
+                      <ul
+                        class="nav nav-tabs nav-line-bottom d-flex justify-content-center flex-wrap border-bottom border-top"
+                        id="tab"
+                        role="tablist"
+                      >
+                        <!-- Nav Nav Item -->
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active py-2"
+                            id="member-tab"
+                            data-bs-toggle="pill"
+                            href="#member"
+                            role="tab"
+                            aria-controls="member"
+                            aria-selected="true"
+                            >Members</a
+                          >
+                        </li>
+                        <!-- Nav Nav Item -->
+                        <li class="nav-item">
+                          <a
+                            class="nav-link py-2"
+                            id="popular-tab"
+                            data-bs-toggle="pill"
+                            href="#popular"
+                            role="tab"
+                            aria-controls="popular"
+                            aria-selected="false"
+                            >Popular</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Tabs -->
+                    <div data-simplebar style="height: 100vh; overflow: auto">
+                      <div class="tab-content" id="tabContent">
+                        <!-- Members Tab -->
+                        <div
+                          class="tab-pane fade show active"
+                          id="member"
+                          role="tabpanel"
+                          aria-labelledby="member-tab"
+                        >
+                          <!-- Members List -->
+                          <ul class="list-unstyled bg-white">
+                            <!-- Search Form-->
+                            <form action="" class="mt-4 py-4 px-4">
+                              <input
+                                type="search"
+                                class="form-control form-control rounded"
+                                placeholder="Search members"
+                              />
+                            </form>
+                            <!-- Member List Item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <a href="#" class="text-link">
+                                  <div
+                                    class="d-flex justify-content-between align-items-center gap-2"
+                                  >
+                                    <div class="avatar avatar-sm">
+                                      <img
+                                        src="./assets/svg/user.svg"
+                                        alt=""
+                                        class="rounded-circle"
+                                      />
+                                    </div>
+                                    <div class="ms-2">
+                                      <h4 class="mb-0">Member One</h4>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </li>
+                            <!-- Member List Item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <a href="#" class="text-link">
+                                  <div
+                                    class="d-flex justify-content-between align-items-center gap-2"
+                                  >
+                                    <div class="avatar avatar-sm">
+                                      <img
+                                        src="./assets/svg/user.svg"
+                                        alt=""
+                                        class="rounded-circle"
+                                      />
+                                    </div>
+                                    <div class="ms-2">
+                                      <h4 class="mb-0">Member Two</h4>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </li>
+                            <!-- Member List Item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Member -->
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <a href="#" class="text-link">
+                                  <div
+                                    class="d-flex justify-content-between align-items-center gap-2"
+                                  >
+                                    <div class="avatar avatar-sm">
+                                      <img
+                                        src="./assets/svg/user.svg"
+                                        alt=""
+                                        class="rounded-circle"
+                                      />
+                                    </div>
+                                    <div class="ms-2">
+                                      <h4 class="mb-0">Member Three</h4>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- Popular Bids Tab -->
+                        <div
+                          class="tab-pane fade"
+                          id="popular"
+                          role="tabpanel"
+                          aria-labelledby="popular-tab"
+                        >
+                          <!-- Popular Bids list -->
+                          <ul class="list-unstyled bg-white">
+                            <!-- Popular Bids List Item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Popular Bids Card Header Content -->
+                              <div class="card-header">
+                                <div
+                                  class="col-auto d-flex align-items-center gap-2 mb-3"
+                                >
+                                  <img
+                                    src="./assets/avatars/img_me.jpg"
+                                    class="rounded-circle avatar-sm"
+                                    alt=""
+                                  />
+                                  <h4 class="mb-0">Robert D.B</h4>
+                                </div>
+                                <h3 class="mb-2">
+                                  Life is short, smile while you still have
+                                  teeth
+                                </h3>
+                              </div>
+                              <!-- Popular Bids Card Body Content -->
+                              <div class="card-body mt-0 d-flex flex-column">
+                                <div class="w-100">
+                                  <img
+                                    class="w-100"
+                                    src="./assets/images/portfolio-square-2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <p class="mt-lg-3 mt-3 ms-0 card-text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Repellendus magnam, iste
+                                    cupiditate molestiae illo suscipit eum
+                                    mollitia, exercitationem hic corporis
+                                    dolorem quo nobis distinctio quis quod. Ea
+                                    iure aut voluptatem.
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                            <!-- Popular Bids List Item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Popular Bids Card Header Content -->
+                              <div class="card-header">
+                                <div
+                                  class="col-auto d-flex align-items-center gap-2 mb-3"
+                                >
+                                  <img
+                                    src="./assets/avatars/img_me.jpg"
+                                    class="rounded-circle avatar-sm"
+                                    alt=""
+                                  />
+                                  <h4 class="mb-0">Robert D.B</h4>
+                                </div>
+                                <h3 class="mb-2">
+                                  Life is short, smile while you still have
+                                  teeth
+                                </h3>
+                              </div>
+                              <!-- Popular Bids Card Body Content -->
+                              <div class="card-body mt-0 d-flex flex-column">
+                                <div class="w-100">
+                                  <img
+                                    class="w-100"
+                                    src="./assets/images/portfolio-square-2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <p class="mt-lg-3 mt-3 ms-0 card-text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Repellendus magnam, iste
+                                    cupiditate molestiae illo suscipit eum
+                                    mollitia, exercitationem hic corporis
+                                    dolorem quo nobis distinctio quis quod. Ea
+                                    iure aut voluptatem.
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                            <!-- Popular Bids List Item -->
+                            <li class="py-4 px-4 border-bottom">
+                              <!-- Popular Bids Card Header Content -->
+                              <div class="card-header">
+                                <div
+                                  class="col-auto d-flex align-items-center gap-2 mb-3"
+                                >
+                                  <img
+                                    src="./assets/avatars/img_me.jpg"
+                                    class="rounded-circle avatar-sm"
+                                    alt=""
+                                  />
+                                  <h4 class="mb-0">Robert D.B</h4>
+                                </div>
+                                <h3 class="mb-2">
+                                  Life is short, smile while you still have
+                                  teeth
+                                </h3>
+                              </div>
+                              <!-- Popular Bids Card Body Content -->
+                              <div class="card-body mt-0 d-flex flex-column">
+                                <div class="w-100">
+                                  <img
+                                    class="w-100"
+                                    src="./assets/images/portfolio-square-2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <p class="mt-lg-3 mt-3 ms-0 card-text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Repellendus magnam, iste
+                                    cupiditate molestiae illo suscipit eum
+                                    mollitia, exercitationem hic corporis
+                                    dolorem quo nobis distinctio quis quod. Ea
+                                    iure aut voluptatem.
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row Item Listings -->
+            <div class="item col-lg-8 col-md-8 col-12">
+              <!-- Card -->
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img
+                      src="./assets/avatars/img_me.jpg"
+                      class="rounded-circle avatar-sm"
+                      alt=""
+                    />
+                    <h4 class="mb-0">Robert D.B</h4>
+                  </div>
+                  <h3 class="mb-2">
+                    Life is short, smile while you still have teeth
+                  </h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img
+                      class="w-100"
+                      src="./assets/images/portfolio-square-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="d-flex mt-2 mb-2 w-100">
+                    <div class="input-group">
+                      <input
+                        type="number"
+                        class="form-control rounded"
+                        placeholder="Place your bid"
+                      />
+                      <button class="btn btn-outline-primary btn-sm w-25">
+                        Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img
+                      src="./assets/avatars/img_me.jpg"
+                      class="rounded-circle avatar-sm"
+                      alt=""
+                    />
+                    <h4 class="mb-0">Robert D.B</h4>
+                  </div>
+                  <h3 class="mb-2">
+                    Life is short, smile while you still have teeth
+                  </h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img
+                      class="w-100"
+                      src="./assets/images/portfolio-square-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="d-flex mt-2 mb-2 w-100">
+                    <div class="input-group">
+                      <input
+                        type="number"
+                        class="form-control rounded"
+                        placeholder="Place your bid"
+                      />
+                      <button class="btn btn-outline-primary btn-sm w-25">
+                        Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="card mb-4 shadow-sm rounded">
+                <!-- Card Header -->
+                <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img
+                      src="./assets/avatars/img_me.jpg"
+                      class="rounded-circle avatar-sm"
+                      alt=""
+                    />
+                    <h4 class="mb-0">Robert D.B</h4>
+                  </div>
+                  <h3 class="mb-2">
+                    Life is short, smile while you still have teeth
+                  </h3>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img
+                      class="w-100"
+                      src="./assets/images/portfolio-square-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card Footer -->
+                <div class="card-footer">
+                  <div class="d-flex mt-2 mb-2 w-100">
+                    <div class="input-group">
+                      <input
+                        type="number"
+                        class="form-control rounded"
+                        placeholder="Place your bid"
+                      />
+                      <button class="btn btn-outline-primary btn-sm w-25">
+                        Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Start -->
+        <div
+          class="modal fade"
+          id="auctionModal"
+          tabindex="-1"
+          aria-labelledby="auctionModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title ms-2" id="auctionModalLabel">
+                  Use this form to create a new auction
+                </h4>
+                <button
+                  type="button"
+                  class="btn-close ms-auto"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h1 class="mb-2">Create Auction</h1>
+                    <form action="./" method="GET">
+                      <div class="form-group">
+                        <label for="subject"
+                          >Subject <span class="require">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-4"
+                          name="subject"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="description"
+                          >Auction Content <span class="require">*</span></label
+                        >
+                        <textarea
+                          rows="5"
+                          class="form-control mb-4"
+                          name="description"
+                          required
+                        ></textarea>
+                      </div>
+                      <div
+                        class="modal-footer d-flex justify-content-start border-top-0 p-0"
+                      >
+                        <button type="submit" class="btn btn-primary">
+                          Create Auction
+                        </button>
+                        <button
+                          type="submit"
+                          class="btn btn-link"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal End -->
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer bg-white mt-lg-8 mt-md-4">
+      <div class="container-lg">
+        <!-- Footer Body -->
+        <div class="row d--flex align-items-center justify-content-center">
+          <div class="col-6 col-md-6 col-12 d-flex flex-column mb-4 mt-8">
+            <!-- About-->
+            <div class="d-flex align-items-center justify-content-center">
+              <img
+                src="./assets/brand/falling-poets.png"
+                class="brand-footer"
+                alt=""
+              />
+            </div>
+            <div class="mt-4 text-center">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur qui numquam suscipit corporis enim. Unde suscipit
+                nemo odio quis iure.
+              </p>
+            </div>
+            <nav>
+              <ul
+                class="navbar navbar-nav d-flex flex-row justify-content-center align-items-center gap-4 w-100"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-decoration-underline active"
+                    aria-current="page"
+                    href="./"
+                    >Home</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="./profile/">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="./">Sign Out</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- Footer Bottom-->
+        <div class="row align-items-center g-0 border-top py-2 mt-4">
+          <div class="col-12">
+            <nav class="nav nav-footer d--flex justify-content-center">
+              <a class="nav-link ps-0" href="#">Privacy Policy</a>
+              <a class="nav-link" href="#">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
