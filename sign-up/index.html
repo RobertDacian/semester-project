@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Squid | Sign Up</title>
-    <link rel="stylesheet" href="/dist/css/main.css" />
+    <link rel="stylesheet" href="../dist/css/main.css" />
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="../src/js/main.js" defer type="module"></script>
   </head>
 
   <body>
@@ -21,20 +26,20 @@
               <!-- Card body -->
               <div class="card-body p-4">
                 <div class="mb-4">
-                  <a href="/"
+                  <a href="../"
                     ><img
-                      src="/assets/brand/Falling-Poets.svg"
+                      src="../assets/brand/Falling-Poets.svg"
                       class="mb-4"
                       alt=""
                   /></a>
                   <h1 class="mb-2 fw-bold">Sign up</h1>
                   <span
                     >Already have an account?
-                    <a href="/sign-in/" class="ms-2">Sign in</a></span
+                    <a href="../sign-in/" class="ms-2">Sign in</a></span
                   >
                 </div>
                 <!-- Form -->
-                <form action="/profile/" method="GET">
+                <form action="../auction-house/" method="GET">
                   <!-- Form Username -->
                   <div class="mb-4">
                     <label for="username" class="form-label">User Name</label>
@@ -82,12 +87,8 @@
                       <label class="form-check-label" for="agreeCheck"
                         ><span
                           >I agree to the
-                          <a href="terms-conditions-page.html"
-                            >Terms and Conditions </a
-                          >and
-                          <a href="privacy-policy-page.html"
-                            >Privacy Policy.</a
-                          ></span
+                          <a href="#">Terms and Conditions </a>and
+                          <a href="#">Privacy Policy.</a></span
                         ></label
                       >
                     </div>
@@ -98,30 +99,6 @@
                       Create Free Account
                     </button>
                   </div>
-                  <hr class="my-4" />
-                  <!-- Social Media -->
-                  <div class="mt-4 d-flex gap-5 justify-content-center">
-                    <!--Facebook-->
-                    <a href="#" class="btn-social">
-                      <!-- <img src="/assets/svg/facebook-f.svg"/>-->
-                      <i class="fab fa-facebook-f fa-lg"></i>
-                    </a>
-                    <!--Twitter-->
-                    <a href="#" class="btn-social">
-                      <!-- <img src="/assets/svg/twitter.svg"/> -->
-                      <i class="fab fa-twitter fa-lg"></i>
-                    </a>
-                    <!--Google-->
-                    <a href="#" class="btn-social">
-                      <!-- <img src="/assets/svg/google.svg"/> -->
-                      <i class="fab fa-google fa-lg"></i>
-                    </a>
-                    <!--GitHub-->
-                    <a href="#" class="btn-social">
-                      <!-- <img src="/assets/svg/github-alt.svg"/> -->
-                      <i class="fab fa-github fa-lg"></i>
-                    </a>
-                  </div>
                 </form>
               </div>
             </div>
@@ -129,8 +106,5 @@
         </div>
       </div>
     </section>
-
-    <!-- Scripts -->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
