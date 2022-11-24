@@ -202,3 +202,11 @@ npx mrm@2 lint-staged
 ```
 "version": "1.0.3"
 ```
+
+- Finished home page, auction-house page structure and styling
+
+- Version updated to 1.0.4
+
+```
+"version": "1.0.4"
+```
