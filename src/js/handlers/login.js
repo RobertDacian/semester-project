@@ -11,7 +11,7 @@ export function setLoginFormListener() {
       const profile = Object.fromEntries(formData.entries());
 
       login(profile);
-      location.href = `./action-house`;
+      location.href = `./auction-house`;
     });
   }
 }
