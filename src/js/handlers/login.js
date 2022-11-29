@@ -11,19 +11,6 @@ export function setLoginFormListener() {
       const profile = Object.fromEntries(formData.entries());
 
       login(profile);
-      location.href = "/auction-house";
     });
   }
 }
-
-// const username = form.username.value;
-// const email = form.email.value;
-// const password = form.password.value;
-// const avatar = form.avatar.value;
-
-// const profile = {
-// 	username,
-// 	email,
-// 	password,
-// 	avatar,
-// };
