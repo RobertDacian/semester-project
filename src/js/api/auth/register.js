@@ -1,20 +1,29 @@
-import { API_BASE } from "../constants.js";
+import { AUCTION_API_BASE } from "../constants.js";
 
 const action = "/auth/register";
 const method = "post";
 
 export async function register(profile) {
-  const registerURL = API_BASE + action;
+  const registerURL = AUCTION_API_BASE + action;
   const body = JSON.stringify(profile);
 
-  const response = await fetch(registerURL, {
+  const options = {
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json;",
     },
     method,
     body,
-  });
+  };
 
-  const result = await response.json();
-  return result;
+  try {
+    const response = await fetch(registerURL, options);
+    const result = await response.json();
+    console.log(result);
+
+    if (response.ok) {
+      location.href = "/auction-house";
+    }
+  } catch (err) {
+    console.log(err);
+  }
 }
