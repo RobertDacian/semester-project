@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Falling Poets | Sign Up</title>
-    <link rel="stylesheet" href="../dist/css/main.css" />
+    <title>Falling Poets | Sign In</title>
+    <link rel="stylesheet" href="../../dist/css/main.css" />
     <script
-      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
-    <script src="../src/js/main.js" defer type="module"></script>
+    <script src="../../src/js/api/auth/login.js" defer type="module"></script>
+    <script src="../../src/js/main.js" defer type="module"></script>
   </head>
 
   <body>
@@ -26,33 +27,23 @@
               <!-- Card body -->
               <div class="card-body p-4">
                 <div class="mb-4">
-                  <a href="../"
+                  <a href="../../"
                     ><img
-                      src="../assets/brand/Falling-Poets.svg"
+                      src="../../assets/brand/Falling-Poets.svg"
                       class="mb-4"
                       alt=""
                   /></a>
-                  <h1 class="mb-2 fw-bold">Sign up</h1>
+                  <h1 class="mb-2">Sign in</h1>
                   <span
-                    >Already have an account?
-                    <a href="../sign-in/" class="ms-2">Sign in</a></span
+                    >Don’t have an account?
+                    <a href="../../profile/sign-up/" class="ms-2"
+                      >Sign up</a
+                    ></span
                   >
                 </div>
                 <!-- Form -->
-                <form action="../auction-house/" method="GET">
+                <form id="loginForm">
                   <!-- Form Username -->
-                  <div class="mb-4">
-                    <label for="username" class="form-label">User Name</label>
-                    <input
-                      type="text"
-                      id="username"
-                      class="form-control"
-                      name="username"
-                      placeholder="User Name"
-                      required
-                    />
-                  </div>
-                  <!-- Form Email -->
                   <div class="mb-4">
                     <label for="email" class="form-label">Email</label>
                     <input
@@ -62,6 +53,8 @@
                       name="email"
                       placeholder="Email address"
                       required
+                      pattern="^[\w\-.]+@(stud.)?noroff.no$"
+                      title="Only @(stud.)noroff.no domains are allowed to register"
                     />
                   </div>
                   <!-- Form Password -->
@@ -74,29 +67,32 @@
                       name="password"
                       placeholder="**************"
                       required
+                      minlength="8"
                     />
                   </div>
                   <!-- Form Checkbox -->
-                  <div class="mb-4">
+                  <div
+                    class="d-lg-flex justify-content-between align-items-center mb-4"
+                  >
                     <div class="form-check">
                       <input
                         type="checkbox"
                         class="form-check-input"
-                        id="agreeCheck"
+                        id="rememberme"
                       />
-                      <label class="form-check-label" for="agreeCheck"
-                        ><span
-                          >I agree to the
-                          <a href="#">Terms and Conditions </a>and
-                          <a href="#">Privacy Policy.</a></span
-                        ></label
+                      <label class="form-check-label" for="rememberme"
+                        >Remember me</label
                       >
+                    </div>
+                    <div>
+                      <a href="#">Forgot your password?</a>
                     </div>
                   </div>
                   <!-- Form Button -->
                   <div class="d-grid">
+                    <!-- <a class="btn btn-primary" href="../../auction-house/">Login</a> -->
                     <button type="submit" class="btn btn-primary">
-                      Create Free Account
+                      Sign in
                     </button>
                   </div>
                 </form>
