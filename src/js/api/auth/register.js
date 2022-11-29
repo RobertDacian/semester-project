@@ -21,7 +21,7 @@ export async function register(profile) {
     console.log(result);
 
     if (response.ok) {
-      location.href = "/auction-house";
+      location.href = "/semester-project/auction-house";
     }
   } catch (err) {
     console.log(err);
