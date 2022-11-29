@@ -26,7 +26,7 @@ export async function login(profile) {
       storage.save("profile", userProfile);
       storage.save("credits", credits);
       storage.save("avatar", avatar);
-      location.href = "/auction-house";
+      location.href = "/semester-project/auction-house";
     }
   } catch (err) {
     console.log(err);
