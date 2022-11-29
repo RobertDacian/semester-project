@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falling Poets | Sign Up</title>
+    <link rel="stylesheet" href="../../dist/css/main.css" />
+    <script
+      src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="../../src/js/main.js" defer type="module"></script>
+    <!-- <script src="../../src/js/handlers/register.js" defer type="module"></script> -->
+  </head>
+
+  <body>
+    <!-- Page content -->
+    <section>
+      <div class="container d-flex flex-column">
+        <div
+          class="row align-items-center justify-content-center g-0 min-vh-100"
+        >
+          <div class="col-lg-5 col-md-8 py-8 py-xl-0">
+            <!-- Card -->
+            <div class="card shadow">
+              <!-- Card body -->
+              <div class="card-body p-4">
+                <div class="mb-4">
+                  <a href="../../"
+                    ><img
+                      src="../../assets/brand/Falling-Poets.svg"
+                      class="mb-4"
+                      alt=""
+                  /></a>
+                  <h1 class="mb-2 fw-bold">Sign up</h1>
+                  <span
+                    >Already have an account?
+                    <a href="../../profile/sign-in/" class="ms-2"
+                      >Sign in</a
+                    ></span
+                  >
+                </div>
+                <!-- Form -->
+                <form id="registerForm">
+                  <!-- Form Username -->
+                  <div class="mb-4">
+                    <label for="username" class="form-label">User Name</label>
+                    <input
+                      type="text"
+                      id="username"
+                      class="form-control"
+                      name="name"
+                      placeholder="User Name"
+                      required
+                      maxlength="20"
+                      pattern="^[\w]+$"
+                      title="Username must only contain lower case and uppercase letters, numbers and underscore (_). Example: My_Username123"
+                    />
+                  </div>
+                  <!-- Form Email -->
+                  <div class="mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email address"
+                      required
+                      pattern="^[\w\-.]+@(stud.)?noroff.no$"
+                      title="Only @(stud.)noroff.no domains are allowed to register"
+                    />
+                  </div>
+                  <!-- Form Password -->
+                  <div class="mb-4">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      name="password"
+                      placeholder="**************"
+                      required
+                      minlength="8"
+                    />
+                  </div>
+                  <!-- Form Avatar -->
+                  <div class="mb-4">
+                    <label for="password" class="form-label">Avatar</label>
+                    <input
+                      type="url"
+                      id="avatar"
+                      class="form-control"
+                      name="avatar"
+                      placeholder="Enter your image URL here"
+                      title="Please enter a valid url in this field"
+                    />
+                  </div>
+                  <!-- Form Checkbox -->
+                  <div class="mb-4">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="agreeCheck"
+                      />
+                      <label class="form-check-label" for="agreeCheck"
+                        ><span
+                          >I agree to the
+                          <a href="#">Terms and Conditions </a>and
+                          <a href="#">Privacy Policy.</a></span
+                        ></label
+                      >
+                    </div>
+                  </div>
+                  <!-- Form Button -->
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">
+                      Create Account
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
