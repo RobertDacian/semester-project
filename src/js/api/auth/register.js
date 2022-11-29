@@ -21,7 +21,7 @@ export async function register(profile) {
     console.log(result);
 
     if (response.ok) {
-      location.href = "/profile/sign-in/";
+      location.href = "../../profile/sign-in/";
     }
   } catch (err) {
     console.log(err);
