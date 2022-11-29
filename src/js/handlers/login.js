@@ -11,7 +11,7 @@ export function setLoginFormListener() {
       const profile = Object.fromEntries(formData.entries());
 
       login(profile);
-      location.href = "/auction-house/index.html";
+      location.href = "/semester-project/auction-house/index.html";
     });
   }
 }
