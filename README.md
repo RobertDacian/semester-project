@@ -226,3 +226,11 @@ npx mrm@2 lint-staged
 ```
 "version": "1.0.6"
 ```
+
+- Finished sign-in and sign up pages and functionality
+
+- Version updated to 1.0.7
+
+```
+"version": "1.0.7"
+```
