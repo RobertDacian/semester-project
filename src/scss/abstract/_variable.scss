@@ -51,7 +51,7 @@ $theme-colors: (
   "info": $info,
   "warning": $warning,
   "danger": $danger,
-  "light": $light,
+  "light": $gray-500,
   "dark": $dark,
   "white": $white,
   "light-primary": $light-primary,
@@ -152,7 +152,7 @@ $border-widths: (
   6: 6px,
 );
 $border-color: $gray-200;
-$border-color-focus: rgba(231, 225, 253, 0.75);
+$border-color-focus: 0px 0px 0px 1px rgba(231, 225, 253, 0.75);
 
 // Hr
 $hr-color: $gray-200;
