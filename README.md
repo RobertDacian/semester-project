@@ -234,3 +234,11 @@ npx mrm@2 lint-staged
 ```
 "version": "1.0.7"
 ```
+
+- Created listings structure in js files: create, update, delete and get listings
+
+- Version updated to 1.0.8
+
+```
+"version": "1.0.8"
+```
