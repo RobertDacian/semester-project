@@ -4,10 +4,10 @@ export default function router() {
   const path = location.pathname;
 
   switch (path) {
-    case "/profile/sign-in/index.html":
+    case "/profile/sign-in/":
       listeners.setLoginFormListener();
       return;
-    case "/profile/sign-up/index.html":
+    case "./profile/sign-up/":
       listeners.setRegisterFormListener();
       return;
     // case '/post/create/':
@@ -21,3 +21,5 @@ export default function router() {
     // 	return;
   }
 }
+
+console.log(location.pathname);
