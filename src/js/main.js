@@ -1,24 +1,28 @@
-import { setRegisterFormListener } from "./handlers/register.js";
-import { setLoginFormListener } from "./handlers/login.js";
+import router from "./router.js";
 
-import * as listings from "./api/listings/index.js";
-// import { removeListing } from "./api/listings/index.js";
+router();
 
-const path = location.pathname;
+// import { setRegisterFormListener } from "./handlers/register.js";
+// import { setLoginFormListener } from "./handlers/login.js";
 
-if (path === "/profile/sign-up/") {
-  setRegisterFormListener();
-} else if (path === "/profile/sign-in/") {
-  setLoginFormListener();
-}
+// import * as listings from "./api/listings/index.js";
+// // import { removeListing } from "./api/listings/index.js";
+
+// const path = location.pathname;
+
+// if (path === "/profile/sign-up/") {
+//   setRegisterFormListener();
+// } else if (path === '/profile/sign-in/') {
+// 	setLoginFormListener();
+// }
 
 // listings.createListing();
 // listings.updateListing();
 // listings.removeListing();
-listings.getListings().then(console.log);
-listings.getListing("960bb61f-f6e1-491b-9510-dfd70c0db199").then(console.log);
+// listings.getListings().then(console.log);
+// listings.getListing("960bb61f-f6e1-491b-9510-dfd70c0db199").then(console.log);
 
-console.log(path);
+// console.log(path);
 
 // removeListing({
 // 	id: "a93a8717-aea8-4a29-905b-58c6253074f4",
