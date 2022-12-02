@@ -14,15 +14,3 @@ export function setRegisterFormListener() {
     });
   }
 }
-
-// const username = form.username.value;
-// const email = form.email.value;
-// const password = form.password.value;
-// const avatar = form.avatar.value;
-
-// const profile = {
-// 	username,
-// 	email,
-// 	password,
-// 	avatar,
-// };
