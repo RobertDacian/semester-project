@@ -10,9 +10,9 @@ export default function router() {
     case "/profile/sign-up/":
       listeners.setRegisterFormListener();
       return;
-    // case '/post/create/':
-    //   listeners.setCreatePostFormListener();
-    //   return;
+    case "/index.html":
+      listeners.signOutBtn();
+      return;
     // case '/post/edit/':
     //   listeners.setUpdatePostListener();
     //   return;

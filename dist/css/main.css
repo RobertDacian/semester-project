@@ -81,6 +81,30 @@ form .form-wrapper {
   width: 100%;
 }
 
+.message {
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.success {
+  color: green;
+  border-color: green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.error {
+  color: red;
+  border-color: red;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.warning {
+  color: orange;
+  border-color: orange;
+  background: rgba(100, 0, 0, 0.1);
+}
+
 .nav-tabs .nav-item .nav-link {
   background-color: transparent !important;
   color: #754ffe;
