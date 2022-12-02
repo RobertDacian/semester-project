@@ -13,7 +13,7 @@ export default function router() {
     case "/index.html":
       listeners.signOutBtn();
       return;
-    // case '/post/edit/':
+    // case '/profile/my-profile/':
     //   listeners.setUpdatePostListener();
     //   return;
     // case '/profile/edit/':
