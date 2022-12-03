@@ -10,6 +10,7 @@
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <script src="./src/js/api/listings/read.js" defer type="module"></script>
     <script src="./src/js/main.js" defer type="module"></script>
   </head>
 
@@ -130,10 +131,14 @@
               </h2>
             </div>
             <!-- Search Section Form -->
-            <form action="" class="input-group d-flex justify-content-center">
+            <form
+              action=""
+              class="search-form input-group d-flex justify-content-center"
+            >
               <div class="input-group gap-2">
                 <input
                   type="search"
+                  id="searchListings1"
                   class="form-control shadow-sm rounded w-auto"
                   placeholder="Search something interesting"
                 />
@@ -318,63 +323,55 @@
             <!-- Row Item Listings -->
             <div class="item col-lg-8 col-md-8 col-12">
               <!-- Card -->
-              <div id="cardContainer" class="card mb-4 shadow-sm rounded">
-                <!-- Card Header -->
-                <div class="card-header">
-                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
-                    <img
-                      src="./assets/avatars/img_me.jpg"
-                      class="rounded-circle avatar-sm"
-                      alt=""
-                    />
-                    <h4 class="mb-0">Listed By - Robert D.B Robert D.B</h4>
-                  </div>
-                  <h2 class="mb-2">
-                    Life is short, smile while you still have teeth
-                  </h2>
+
+              <div
+                id="cardWrapper"
+                class="card bg-transparent mb-4 shadow-sm rounded"
+              >
+                <!-- <div class="card-header">
+                <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                  <img src="./assets/avatars/img_me.jpg" class="rounded-circle avatar-sm" alt="" />
+                  <h4 class="mb-0">Listed By - Robert D.B Robert D.B</h4>
                 </div>
-                <!-- Card Body -->
-                <div class="card-body mt-0 d-flex flex-lg-row flex-column">
-                  <div class="w-100">
-                    <img
-                      class="w-100"
-                      src="./assets/images/portfolio-square-2.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Repellendus magnam, iste cupiditate molestiae illo
-                      suscipit eum mollitia, exercitationem hic corporis dolorem
-                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
-                    </p>
-                  </div>
+                <h2 class="mb-2">
+                  Life is short, smile while you still have teeth
+                </h2>
+              </div> -->
+
+                <!-- <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                <div class="w-100">
+                  <img class="w-100" src="./assets/images/portfolio-square-2.jpg" alt="" />
                 </div>
-                <!-- Card Footer -->
-                <div class="card-footer">
-                  <div class="d-flex flex-column mt-2 mb-2 w-100">
-                    <h4 class="mb-2">
-                      Bid started:
-                      <span class="text-success border-bottom border-success"
-                        >23 November 29, 2022</span
-                      >
-                    </h4>
-                    <h4 class="mb-0">
-                      Bid ends in:
-                      <span class="text-danger border-bottom border-danger"
-                        >23 Days - 03 Hours - 34 Min - 23 Sec</span
-                      >
-                    </h4>
-                  </div>
-                  <div class="mt-4 mb-2">
-                    <h3>
-                      To bid on this product please
-                      <a href="./profile/sign-in/"><span>Sign-In.</span></a>
-                    </h3>
-                  </div>
+                <div>
+                  <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Repellendus magnam, iste cupiditate molestiae illo
+                    suscipit eum mollitia, exercitationem hic corporis dolorem
+                    quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                  </p>
                 </div>
+              </div> -->
+
+                <!-- <div class="card-footer">
+                <div class="d-flex flex-column mt-2 mb-2 w-100">
+                  <h4 class="mb-2">
+                    Bid started:
+                    <span class="text-success border-bottom border-success">23 November 29, 2022</span>
+                  </h4>
+                  <h4 class="mb-0">
+                    Bid ends in:
+                    <span class="text-danger border-bottom border-danger">23 Days - 03 Hours - 34 Min - 23 Sec</span>
+                  </h4>
+                </div>
+                <div class="mt-4 mb-2">
+                  <h3>
+                    To bid on this product please
+                    <a href="./profile/sign-in/"><span>Sign-In.</span></a>
+                  </h3>
+                </div>
+              </div> -->
               </div>
+              <div class="msg-container"></div>
             </div>
           </div>
         </div>
