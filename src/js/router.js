@@ -1,8 +1,9 @@
 import * as listeners from "./handlers/index.js";
-// import { createListing } from './api/listings/create.js';
+import { renderAuctionList } from "./views/auctions/auctionList.js";
 
+// console.log("listeners", listeners.setSearchFormListener)
 // import { getListings } from './api/listings/read.js';
-// import { getListingsAll } from './api/listings/readLoggedIn.js';
+// import { getListingsAll } from './api/listings/read.js';
 // import { displayListings } from './api/listings/read.js';
 // // import { getBidListings } from './api/listings/readLoggedIn.js';
 
@@ -19,6 +20,11 @@ export default function router() {
       return;
     case "/profile/sign-up/":
       listeners.setRegisterFormListener();
+      return;
+    case "/":
+      // case "/index.html":
+      listeners.setSearchFormListener();
+      renderAuctionList();
       return;
     case "/index.html":
       listeners.signOutBtn();
