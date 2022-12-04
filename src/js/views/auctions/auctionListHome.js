@@ -1,30 +1,28 @@
 import { getListings } from "../../api/listings/read.js";
-// import { message } from "../../components/messages.js";
 
-export async function renderAuctionList() {
-  const auctions = await getListings();
-  renderAuctions(auctions);
+export async function renderAuctionListHome() {
+  const auctionsHome = await getListings();
+  renderAuctionsHome(auctionsHome);
 }
 
-export function renderSearchedAuctionList(auctions) {
-  renderAuctions(auctions);
+export function renderSearchedAuctionListHome(auctionsHome) {
+  renderAuctionsHome(auctionsHome);
 
-  const msgContainer = document.querySelector(".msg-container");
+  const msgContainerHome = document.querySelector(".msg-container");
 
-  if (auctions.length < 1) {
-    msgContainer.innerHTML = `<p class="error-msg">Sorry, no listing matched your search. Please search for a specific tag, for ex: Cars, Audi, etc.</p>`;
+  if (auctionsHome.length < 1) {
+    msgContainerHome.innerHTML = `<p class="error-msg">Sorry, no listing matched your search. Please search for a specific tag, for ex: Cars, Audi, etc.</p>`;
     return;
   }
 }
 
-function renderAuctions(auctions) {
-  const listingsContainer = document.querySelector("#cardWrapper");
-
+function renderAuctionsHome(auctionsHome) {
+  const listingsContainer = document.querySelector(" #cardWrapper1");
   listingsContainer.innerHTML = "";
 
-  auctions.forEach((auction) => {
+  auctionsHome.forEach((auction) => {
     listingsContainer.innerHTML += ` 
-                <div id"cardWrapper" class=" card  mb-4 rounded">
+                <div id"cardWrapper1" class=" card  mb-4 rounded">
                   <div class="card-header">
                     <div class="col-auto d-flex align-items-center gap-2 mb-3">
                       <img src="${auction.media}" class="rounded-circle avatar-sm" alt="" />
@@ -56,11 +54,15 @@ function renderAuctions(auctions) {
                         Bid ends in:
                         <span class="text-danger border-bottom border-danger">${auction.endsAt}</span>
                       </h4>
-                  
-                      <h3>
-                        To bid on this product please
-                        <a href="./profile/sign-in/"><span>Sign-In.</span></a>
-                      </h3>
+                      <div class="input-group flex-row gap-2">
+                        <input type="number" class="form-control rounded" placeholder="Place your bid" />
+                        <button class="btn btn-outline-primary rounded btn-sm w-25">
+                        Bid
+                        </button>
+                      </div>
+                      <div class="mt-4">
+                        <h3 class="text-success">Latest bid $200 By Some User</h3>
+                      </div>       
                     </div>
                   </div> 
                 </div`;
