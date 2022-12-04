@@ -12,7 +12,7 @@ export function renderSearchedAuctionListHome(auctionsHome) {
   msgContainerHome.innerHTML = "";
 
   if (auctionsHome.length < 1) {
-    msgContainerHome.innerHTML = `<p class="error-msg">Sorry, no listing matched your search. Please search for a specific tag, for ex: Cars, Audi, etc.</p>`;
+    msgContainerHome.innerHTML += `<p class="error-msg">Sorry, no listing matched your search. Please search for a specific tag, for ex: Cars, Audi, etc.</p>`;
     return;
   }
 }
