@@ -21,7 +21,7 @@ export default function router() {
       renderAuctionListHome();
       return;
 
-    case "/index.html":
+    case "/index.html/":
       listeners.signOutBtn();
       return;
     // case '/profile/create-listings/':
