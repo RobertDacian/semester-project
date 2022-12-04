@@ -13,6 +13,7 @@ export default function router() {
       listeners.setRegisterFormListener();
       return;
     case "/":
+    case "/index.html/":
       listeners.setSearchFormListener();
       renderAuctionList();
       return;
@@ -21,9 +22,9 @@ export default function router() {
       renderAuctionListHome();
       return;
 
-    case "/index.html/":
-      listeners.signOutBtn();
-      return;
+    // case "/index.html/":
+    //   listeners.signOutBtn();
+    //   return;
     // case '/profile/create-listings/':
     //   listeners.setCreateListingListener();
     //   return;
