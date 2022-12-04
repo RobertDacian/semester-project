@@ -1,13 +1,6 @@
 import * as listeners from "./handlers/index.js";
-
-// import { getListings } from './api/listings/read.js';
-// import { getListingsAll } from './api/listings/readLoggedIn.js';
-// import { displayListings } from './api/listings/read.js';
-// // import { getBidListings } from './api/listings/readLoggedIn.js';
-
-// getListings();
-// getListingsAll();
-// displayListings();
+import { renderAuctionList } from "./views/auctions/auctionList.js";
+import { renderAuctionListHome } from "./views/auctions/auctionListHome.js";
 
 export default function router() {
   const path = location.pathname;
@@ -19,16 +12,34 @@ export default function router() {
     case "/profile/sign-up/":
       listeners.setRegisterFormListener();
       return;
-    // case "/index.html":
-    //   listeners.signOutBtn();
+    case "/":
+      listeners.setSearchFormListener();
+      renderAuctionList();
+      return;
+    case "/auction-house/":
+      listeners.setSearchFormListenerHome();
+      renderAuctionListHome();
+      return;
+
+    case "/index.html":
+      listeners.signOutBtn();
+      return;
+    // case '/profile/create-listings/':
+    //   listeners.setCreateListingListener();
     //   return;
+    // case '/profile/listings/':
+    // 	listeners.setUpdateListingListener();
+    // 	return;
     // case '/profile/my-profile/':
-    //   listeners.setUpdatePostListener();
-    //   return;
-    // case '/profile/edit/':
-    //   listeners.setUpdateProfileListener();
-    //   return;
+    // 	listeners.setUpdateProfileListener();
+    // 	return;
   }
 }
 
 console.log(location.pathname);
+
+// createListing({
+//   title: "Example Listing",
+//   body: "Example Body",
+//   endsAt: "November 17, 2022"
+// })
