@@ -243,7 +243,7 @@ npx mrm@2 lint-staged
 "version": "1.0.8"
 ```
 
-- Added fetch listings and search listings functionalities on both, lending home page and logged in home page.
+- Added fetch auction listings and search auction listings functionalities on both, lending home page and logged in home page.
 
 - Version updated to 1.0.9
 
