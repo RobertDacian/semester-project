@@ -1,3 +1,5 @@
+//This is a template module for updating a post with method "POST" to send data to the API, use this anytime you need to create a post with User Authentication.
+
 import { API_AUCTION_URL } from "../constants.js";
 
 import { authFetch } from "../authFetch.js";
@@ -13,5 +15,9 @@ export async function createListing(listingData) {
     body: JSON.stringify(listingData),
   });
 
-  return await response.json();
+  const results = await response.json();
+  console.log(results);
+  // return await response.json(); // this is a shorter way to return results
+
+  return results;
 }

@@ -1,4 +1,5 @@
 import * as listeners from "./handlers/index.js";
+// import { createListing } from './api/listings/create.js';
 
 // import { getListings } from './api/listings/read.js';
 // import { getListingsAll } from './api/listings/readLoggedIn.js';
@@ -19,16 +20,25 @@ export default function router() {
     case "/profile/sign-up/":
       listeners.setRegisterFormListener();
       return;
-    // case "/index.html":
-    //   listeners.signOutBtn();
+    case "/index.html":
+      listeners.signOutBtn();
+      return;
+    // case '/profile/create-listings/':
+    //   listeners.setCreateListingListener();
     //   return;
+    // case '/profile/listings/':
+    // 	listeners.setUpdateListingListener();
+    // 	return;
     // case '/profile/my-profile/':
-    //   listeners.setUpdatePostListener();
-    //   return;
-    // case '/profile/edit/':
-    //   listeners.setUpdateProfileListener();
-    //   return;
+    // 	listeners.setUpdateProfileListener();
+    // 	return;
   }
 }
 
 console.log(location.pathname);
+
+// createListing({
+//   title: "Example Listing",
+//   body: "Example Body",
+//   endsAt: "November 17, 2022"
+// })
