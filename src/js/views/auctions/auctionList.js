@@ -10,6 +10,7 @@ export function renderSearchedAuctionList(auctions) {
   renderAuctions(auctions);
 
   const msgContainer = document.querySelector(".msg-container");
+  msgContainer.innerHTML = "";
 
   if (auctions.length < 1) {
     msgContainer.innerHTML = `<p class="error-msg">Sorry, no listing matched your search. Please search for a specific tag, for ex: Cars, Audi, etc.</p>`;
