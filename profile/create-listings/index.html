@@ -266,74 +266,53 @@
     </main>
 
     <!-- Modal Start -->
-    <div
-      class="modal fade"
-      id="postModal"
-      tabindex="-1"
-      aria-labelledby="postModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title ms-2" id="postModalLabel">
-              Use this form to create a new auction
-            </h4>
-            <button
-              type="button"
-              class="btn-close ms-auto"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-12">
-                <h1 class="mb-2">Create auction</h1>
-                <form action="/" method="GET">
-                  <div class="form-group">
-                    <label for="subject"
-                      >Subject <span class="require">*</span></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control mb-4"
-                      name="subject"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="description"
-                      >Auction Content <span class="require">*</span></label
-                    >
-                    <textarea
-                      rows="5"
-                      class="form-control mb-4"
-                      name="description"
-                      required
-                    ></textarea>
-                  </div>
-                  <div
-                    class="modal-footer d-flex justify-content-start border-top-0 p-0"
-                  >
-                    <button type="submit" class="btn btn-primary">
-                      Create Auction
-                    </button>
-                    <button
-                      type="submit"
-                      class="btn btn-link"
-                      data-bs-dismiss="modal"
-                    >
-                      Cancel
-                    </button>
-                  </div>
-                </form>
-              </div>
+    <!-- <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title ms-2" id="postModalLabel">
+            Use this form to create a new auction
+          </h4>
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="mb-2">Create auction</h1>
+              <form id="createListing">
+                <div class="form-group mb-3">
+                  <label for="">Title</label>
+                  <input class="form-control" type="text" name="title" placeholder="Auction title" required />
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="">Body</label>
+                  <textarea class="form-control" name="body" required> </textarea>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="">Tags</label>
+                  <input class="form-control" type="text" name="tags" placeholder="Action tags" />
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="">Media</label>
+                  <input class="form-control" type="url" name="media" placeholder="Image Url" />
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="">Listing ends at</label>
+                  <input class="form-control" type="date" id="date-picker" name="endsAt" required />
+                </div>
+
+                <button class="btn btn-primary mb-2">Create auction</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div> -->
     <!-- Modal End -->
 
     <!-- footer -->

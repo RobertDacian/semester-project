@@ -21,6 +21,7 @@ export async function login(profile) {
       await response.json();
 
     if (response.ok) {
+      // storage.save("name", userName)
       storage.save("token", accessToken);
       storage.save("profile", userProfile);
       storage.save("credits", credits);

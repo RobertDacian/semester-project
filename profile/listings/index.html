@@ -103,7 +103,7 @@
                     type="button"
                     class="btn btn-primary"
                     data-bs-toggle="modal"
-                    data-bs-target="#postModal"
+                    data-bs-target="#auctionModalListings"
                   >
                     Create Auction
                   </button>
@@ -222,56 +222,58 @@
                   </div>
                 </div>
                 <!-- Card -->
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <div class="col-auto d-flex align-items-center gap-2 mb-3">
-                      <img
-                        src="../../assets/avatars/img_me.jpg"
-                        class="rounded-circle avatar-sm"
-                        alt=""
-                      />
-                      <h4 class="mb-0">Robert D.B</h4>
-                    </div>
-                    <h3 class="mb-2">
-                      Life is short, smile while you still have teeth
-                    </h3>
+
+                <div
+                  id="cardWrapper2"
+                  class="card bg-transparent mb-4 shadow-sm rounded"
+                >
+                  <!-- <div class="card-header">
+                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
+                    <img src="../assets/avatars/img_me.jpg" class="rounded-circle avatar-sm" alt="" />
+                    <h4 class="mb-0">Listed By - Robert D.B</h4>
                   </div>
-                  <!-- Card Body -->
-                  <div class="card-body mt-0 d-flex flex-lg-row flex-column">
-                    <div class="w-100">
-                      <img
-                        class="w-100"
-                        src="../../assets/images/portfolio-square-2.jpg"
-                        alt=""
-                      />
+                  <h3 class="mb-2">
+                    Life is short, smile while you still have teeth
+                  </h3>
+                </div> -->
+
+                  <!-- <div class="card-body mt-0 d-flex flex-lg-row flex-column">
+                  <div class="w-100">
+                    <img class="w-100" src="../assets/images/portfolio-square-2.jpg" alt="" />
+                  </div>
+                  <div>
+                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Repellendus magnam, iste cupiditate molestiae illo
+                      suscipit eum mollitia, exercitationem hic corporis dolorem
+                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
+                    </p>
+                  </div>
+                </div> -->
+
+                  <!-- <div class="card-footer">
+                  <div class="d-flex flex-column mt-2 mb-2 w-100">
+                    <h4 class="mb-2">
+                      Bid started:
+                      <span class="text-success border-bottom border-success">23 November 29, 2022</span>
+                    </h4>
+                    <h4 class="mb-4">
+                      Bid ends in:
+                      <span class="text-danger border-bottom border-danger">23 Days - 03 Hours - 34 Min - 23 Sec</span>
+                    </h4>
+                    <div class="input-group flex-row gap-2">
+                      <input type="number" class="form-control rounded" placeholder="Place your bid" />
+                      <button class="btn btn-outline-primary rounded btn-sm w-25">
+                        Bid
+                      </button>
                     </div>
-                    <div>
-                      <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Repellendus magnam, iste cupiditate molestiae illo
-                        suscipit eum mollitia, exercitationem hic corporis
-                        dolorem quo nobis distinctio quis quod. Ea iure aut
-                        voluptatem.
-                      </p>
+                    <div class="mt-4">
+                      <h3 class="text-success">Latest bid $200 By Some User</h3>
                     </div>
                   </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="d-flex mt-2 mb-2 w-100">
-                      <div class="input-group">
-                        <input
-                          type="number"
-                          class="form-control rounded"
-                          placeholder="Place your bid"
-                        />
-                        <button class="btn btn-outline-primary btn-sm w-25">
-                          Bid
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                </div> -->
                 </div>
+                <div class="msg-container"></div>
               </div>
             </div>
           </div>
@@ -282,7 +284,7 @@
     <!-- Modal Start -->
     <div
       class="modal fade"
-      id="postModal"
+      id="auctionModalListings"
       tabindex="-1"
       aria-labelledby="postModalLabel"
       aria-hidden="true"
@@ -304,43 +306,56 @@
             <div class="row">
               <div class="col-12">
                 <h1 class="mb-2">Create auction</h1>
-                <form action="/" method="GET">
-                  <div class="form-group">
-                    <label for="subject"
-                      >Subject <span class="require">*</span></label
-                    >
+                <form id="createListingProfile">
+                  <div class="form-group mb-3">
+                    <label for="">Title</label>
                     <input
+                      class="form-control"
                       type="text"
-                      class="form-control mb-4"
-                      name="subject"
+                      name="title"
+                      placeholder="Auction title"
                       required
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="description"
-                      >Auction Content <span class="require">*</span></label
-                    >
-                    <textarea
-                      rows="5"
-                      class="form-control mb-4"
-                      name="description"
+
+                  <div class="form-group mb-3">
+                    <label for="">Body</label>
+                    <textarea class="form-control" name="body" required>
+                    </textarea>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="">Tags</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="tags"
+                      placeholder="Action tags"
+                    />
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="">Media</label>
+                    <input
+                      class="form-control"
+                      type="url"
+                      name="media"
+                      placeholder="Image Url"
+                    />
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="">Listing ends at</label>
+                    <input
+                      class="form-control"
+                      type="date"
+                      id="date-picker"
+                      name="endsAt"
                       required
-                    ></textarea>
+                    />
                   </div>
-                  <div
-                    class="modal-footer d-flex justify-content-start border-top-0 p-0"
-                  >
-                    <button type="submit" class="btn btn-primary">
-                      Create Auction
-                    </button>
-                    <button
-                      type="submit"
-                      class="btn btn-link"
-                      data-bs-dismiss="modal"
-                    >
-                      Cancel
-                    </button>
-                  </div>
+
+                  <button class="btn btn-primary mb-2">Create auction</button>
                 </form>
               </div>
             </div>

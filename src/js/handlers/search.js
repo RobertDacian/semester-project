@@ -33,6 +33,7 @@ export function setSearchFormListenerHome() {
       const form = event.target;
       const formData = new FormData(form);
       const searchTerm = formData.get("search");
+      // searchTerm.toLowerCase().includes(searchTerm);
 
       const auctionsHome = await searchListings(searchTerm);
       console.log(auctionsHome);
