@@ -1,6 +1,7 @@
 import * as listeners from "./handlers/index.js";
 import { renderAuctionList } from "./views/auctions/auctionList.js";
 import { renderAuctionListHome } from "./views/auctions/auctionListHome.js";
+// import { renderAuctionListProfile } from "./views/auctions/auctionListProfile.js";
 
 export default function router() {
   const path = location.pathname;
@@ -15,15 +16,19 @@ export default function router() {
     case "/":
     case "/index.html":
       listeners.setSearchFormListener();
+      // listeners.setCreateListingListenerHome();
       renderAuctionList();
       return;
     case "/auction-house/":
       listeners.setSearchFormListenerHome();
+      listeners.setCreateListingListenerHome();
       renderAuctionListHome();
       return;
-    // case '/index.html/':
-    //   listeners.signOutBtn();
-    //   return;
+    // case '/profile/listings/':
+    //   listeners.setCreateListingListenerHome();
+    //   // listeners.setUpdateListingListener();
+    //   renderAuctionListHome();
+    // 	return;
     // case '/profile/create-listings/':
     //   listeners.setCreateListingListener();
     //   return;

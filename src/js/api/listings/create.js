@@ -7,8 +7,14 @@ import { authFetch } from "../authFetch.js";
 const action = "/listings";
 const method = "post";
 
+/**
+ * Function to create a new listing
+ * @param {string} listingData
+ * @returns new auction listing
+ */
+
 export async function createListing(listingData) {
-  const createListingURL = API_AUCTION_URL + action;
+  const createListingURL = { API_AUCTION_URL } + action;
 
   const response = await authFetch(createListingURL, {
     method,

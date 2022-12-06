@@ -1,10 +1,12 @@
 import { API_AUCTION_URL } from "../constants.js";
 import { authFetch } from "../authFetch.js";
+// import * as storage from '../../storage/index.js';
 // import { message } from "../../components/messages.js";
 
 // Fetching all listings fot both, signed in user and not signed in user
-
+//  storage.load('profile');
 const action = "/listings";
+// const profiles = '/profiles';
 
 export async function getListings() {
   const allListingsUrl = `${API_AUCTION_URL}${action}`;
@@ -29,3 +31,26 @@ export async function searchListings(searchTerm) {
 
   throw new Error(response.statusText);
 }
+
+// const queryString = document.location.search;
+// const params = new URLSearchParams(queryString);
+// const name = params.get('name');
+
+// // Get the auth token
+
+// export async function getListing() {
+
+// 	const singleListingURL = `${API_AUCTION_URL}${profiles}/name/listings`;
+
+// 	const response = await authFetch(singleListingURL, {});
+
+// 	const results = await response.json();
+// 	console.log(results);
+// 	// return await response.json(); // this is a shorter way to return results
+
+//   if (response.ok) {
+//     location.href = '../listings';
+
+// 		return results;
+//  }
+// }
