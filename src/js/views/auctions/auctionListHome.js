@@ -1,4 +1,5 @@
 import { getListings } from "../../api/listings/read.js";
+// import { searchListings } from '../../api/listings/read.js';
 
 export async function renderAuctionListHome() {
   const auctionsHome = await getListings();
@@ -18,9 +19,7 @@ export function renderSearchedAuctionListHome(auctionsHome) {
 }
 
 function renderAuctionsHome(auctionsHome) {
-  const listingsContainer = document.querySelector(
-    " #cardWrapper1, #cardWrapper2"
-  );
+  const listingsContainer = document.querySelector("#cardWrapper1");
   listingsContainer.innerHTML = "";
 
   auctionsHome.forEach((auction) => {
