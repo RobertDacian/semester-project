@@ -1,5 +1,6 @@
 import { API_AUCTION_URL } from "../constants.js";
 import { authFetch } from "../authFetch.js";
+import { getProfileName } from "../../storage/helpers.js";
 // import * as storage from '../../storage/index.js';
 // import { message } from "../../components/messages.js";
 
@@ -25,6 +26,24 @@ export async function searchListings(searchTerm) {
   const searchedListingsUrl = `${API_AUCTION_URL}${action}?_tag=${searchTerm}`;
 
   const response = await authFetch(searchedListingsUrl);
+  if (response.ok) {
+    return await response.json();
+  }
+
+  throw new Error(response.statusText);
+}
+
+export async function getOwnListings() {
+  const name = getProfileName();
+
+  if (!name) {
+    return [];
+  }
+
+  const url = `${API_AUCTION_URL}/profiles/${name}${action}`;
+
+  const response = await authFetch(url);
+
   if (response.ok) {
     return await response.json();
   }

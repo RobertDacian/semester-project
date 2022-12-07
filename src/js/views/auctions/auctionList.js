@@ -1,4 +1,4 @@
-import { getListings } from "../../api/listings/read.js";
+import { getListings, getOwnListings } from "../../api/listings/read.js";
 // import { message } from "../../components/messages.js";
 
 export async function renderAuctionList() {
@@ -16,6 +16,20 @@ export function renderSearchedAuctionList(auctions) {
     msgContainer.innerHTML += `<p class="error-msg">Sorry, no listing matched your search. Please search for a specific tag, for ex: Cars, Audi, etc.</p>`;
     return;
   }
+}
+
+export async function renderOwnListings() {
+  const auctions = await getOwnListings();
+  renderOwnAuctions(auctions);
+}
+
+function renderOwnAuctions(auctions) {
+  const listingsContainer = document.querySelector("#ownListings");
+  listingsContainer.innerHTML = "";
+
+  auctions.forEach((auction) => {
+    listingsContainer.innerHTML += `<div>${auction.title}<a href="/listing/edit/${auction.id}">Edit</a></div>`;
+  });
 }
 
 function renderAuctions(auctions) {

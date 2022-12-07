@@ -1,5 +1,8 @@
 import * as listeners from "./handlers/index.js";
-import { renderAuctionList } from "./views/auctions/auctionList.js";
+import {
+  renderAuctionList,
+  renderOwnListings,
+} from "./views/auctions/auctionList.js";
 import { renderAuctionListHome } from "./views/auctions/auctionListHome.js";
 
 // import { renderSearchedAuctionListHome } from "../js/views/auctions/auctionListHome.js";
@@ -28,6 +31,7 @@ export default function router() {
     case "/profile/listings/":
       listeners.setCreateListingListenerHome();
       listeners.setSearchFormListener();
+      renderOwnListings();
       // listeners.createListing();
       // listeners.setSearchFormListenerHome();
       // listeners.setUpdateListingListener();
