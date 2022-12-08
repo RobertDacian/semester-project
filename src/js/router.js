@@ -3,9 +3,8 @@ import {
   renderAuctionList,
   renderOwnListings,
 } from "./views/auctions/auctionList.js";
+import { renderProfile, renderAvatar } from "./views/auctions/profile.js";
 import { renderAuctionListHome } from "./views/auctions/auctionListHome.js";
-
-// import { renderSearchedAuctionListHome } from "../js/views/auctions/auctionListHome.js";
 
 export default function router() {
   const path = location.pathname;
@@ -20,7 +19,6 @@ export default function router() {
     case "/":
     case "/index.html":
       listeners.setSearchFormListener();
-      // listeners.setCreateListingListenerHome();
       renderAuctionList();
       return;
     case "/auction-house/":
@@ -33,13 +31,17 @@ export default function router() {
       listeners.setUpdateListingListener();
       listeners.setSearchFormListener();
       renderOwnListings();
-      // listeners.createListing();
-      // listeners.setSearchFormListenerHome();
-      // listeners.setUpdateListingListener();
+      renderProfile();
       renderAuctionListHome();
       return;
     case "/profile/create-listings/":
       listeners.setUpdateListingListener();
+      return;
+    case "/profile/my-profile/":
+      renderProfile();
+      renderAvatar();
+      // ImgError();
+      // listeners.setUpdateAvatarListener();
       return;
     // case '/profile/listings/':
     // 	listeners.setUpdateListingListener();
