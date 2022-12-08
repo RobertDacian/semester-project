@@ -98,12 +98,12 @@
                   </div>
                 </div>
                 <div>
-                  <!-- Modal Button -->
+                  <!-- Create Listings Modal Button -->
                   <button
                     type="button"
                     class="btn btn-primary"
                     data-bs-toggle="modal"
-                    data-bs-target="#auctionModalListings"
+                    data-bs-target="#createListingsModal2"
                   >
                     Create Auction
                   </button>
@@ -190,20 +190,17 @@
             </div>
             <!-- Posts -->
             <div class="col-lg-9 col-md-8 col-12">
-              <!-- Card -->
-              <div class="card mb-4">
-                <!-- Card header -->
+              <!-- Intro Card -->
+              <div class="d-flex align-items-center mb-4">
                 <div
-                  class="card-header d-lg-flex align-items-center justify-content-between"
+                  class="card p-4 d-flex flex-lg-row flex-column align-items-center w-100"
                 >
-                  <div class="mb-3 mb-lg-0 w-50">
+                  <div class="d-flex flex-column w-100">
                     <h3 class="mb-0">Listings</h3>
                     <span>See recent listings here</span>
                   </div>
                   <!-- Search Post Form -->
-                  <div
-                    class="form-wrapper d-flex justify-content-lg-end justify-content-md-start w-100"
-                  >
+                  <div class="form-wrapper d-flex align-items-center w-100">
                     <form
                       class="mt-3 mt-lg-0 ms-lg-3 me-lg-0 d-flex align-items-center w-100"
                     >
@@ -215,64 +212,20 @@
                       </span>
                       <input
                         type="search"
+                        id="searcOwnListings"
                         class="bg-white form-control ps-6 w-100"
-                        placeholder="Search auction"
+                        placeholder="Search listings"
                       />
                     </form>
                   </div>
                 </div>
-                <!-- Card -->
-
+              </div>
+              <!-- Listings Card -->
+              <div id="ownListings" class="card">
                 <div
                   id="cardWrapper2"
                   class="card bg-transparent mb-4 shadow-sm rounded"
-                >
-                  <!-- <div class="card-header">
-                  <div class="col-auto d-flex align-items-center gap-2 mb-3">
-                    <img src="../assets/avatars/img_me.jpg" class="rounded-circle avatar-sm" alt="" />
-                    <h4 class="mb-0">Listed By - Robert D.B</h4>
-                  </div>
-                  <h3 class="mb-2">
-                    Life is short, smile while you still have teeth
-                  </h3>
-                </div> -->
-
-                  <!-- <div class="card-body mt-0 d-flex flex-lg-row flex-column">
-                  <div class="w-100">
-                    <img class="w-100" src="../assets/images/portfolio-square-2.jpg" alt="" />
-                  </div>
-                  <div>
-                    <p class="ms-lg-4 mt-lg-0 mt-3 ms-0 card-text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Repellendus magnam, iste cupiditate molestiae illo
-                      suscipit eum mollitia, exercitationem hic corporis dolorem
-                      quo nobis distinctio quis quod. Ea iure aut voluptatem.
-                    </p>
-                  </div>
-                </div> -->
-
-                  <!-- <div class="card-footer">
-                  <div class="d-flex flex-column mt-2 mb-2 w-100">
-                    <h4 class="mb-2">
-                      Bid started:
-                      <span class="text-success border-bottom border-success">23 November 29, 2022</span>
-                    </h4>
-                    <h4 class="mb-4">
-                      Bid ends in:
-                      <span class="text-danger border-bottom border-danger">23 Days - 03 Hours - 34 Min - 23 Sec</span>
-                    </h4>
-                    <div class="input-group flex-row gap-2">
-                      <input type="number" class="form-control rounded" placeholder="Place your bid" />
-                      <button class="btn btn-outline-primary rounded btn-sm w-25">
-                        Bid
-                      </button>
-                    </div>
-                    <div class="mt-4">
-                      <h3 class="text-success">Latest bid $200 By Some User</h3>
-                    </div>
-                  </div>
-                </div> -->
-                </div>
+                ></div>
                 <div class="msg-container"></div>
               </div>
             </div>
@@ -281,10 +234,10 @@
       </section>
     </main>
 
-    <!-- Modal Start -->
+    <!-- Create Listing Modal Start -->
     <div
       class="modal fade"
-      id="auctionModalListings"
+      id="createListingsModal2"
       tabindex="-1"
       aria-labelledby="postModalLabel"
       aria-hidden="true"
@@ -319,8 +272,8 @@
                   </div>
 
                   <div class="form-group mb-3">
-                    <label for="">Body</label>
-                    <textarea class="form-control" name="body" required>
+                    <label for="">Description</label>
+                    <textarea class="form-control" name="description" required>
                     </textarea>
                   </div>
 
@@ -363,7 +316,96 @@
         </div>
       </div>
     </div>
-    <!-- Modal End -->
+    <!-- Create Listing Modal End -->
+
+    <!-- Edit Listing Modal Button-->
+    <!-- <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+    data-bs-target="#editListingsModal">
+    Update
+  </button> -->
+    <!-- Edit Listing Modal Start -->
+    <div
+      class="modal fade"
+      id="updateListingModal"
+      tabindex="-1"
+      aria-labelledby="postModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title ms-2" id="postModalLabel">
+              Use this form to update your auction
+            </h4>
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="mb-2">Update auction</h1>
+                <form id="editListingProfile">
+                  <div class="form-group mb-3">
+                    <label for="">Title</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="title"
+                      placeholder="Auction title"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="">Description</label>
+                    <textarea class="form-control" name="description" required>
+                    </textarea>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="">Tags</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="tags"
+                      placeholder="Action tags"
+                    />
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="">Media</label>
+                    <input
+                      class="form-control"
+                      type="url"
+                      name="media"
+                      placeholder="Image Url"
+                    />
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="">Listing ends at</label>
+                    <input
+                      class="form-control"
+                      type="date"
+                      id="date-picker"
+                      name="endsAt"
+                      required
+                    />
+                  </div>
+
+                  <button class="btn btn-primary mb-2">Update Listing</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Edit Listing Modal End -->
 
     <!-- footer -->
     <footer class="footer bg-white mt-lg-8 mt-md-4">

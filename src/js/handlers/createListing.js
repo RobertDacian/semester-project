@@ -1,4 +1,4 @@
-// import { createListing } from "../api/listings/create.js";
+import { createListing } from "../api/listings/create.js";
 
 /**
  * Function that creates new listing
@@ -31,9 +31,9 @@ export async function setCreateListingListenerHome() {
       // 	endsAt: endsAt.value,
       // };
 
-      // await createListing(listing);
+      await createListing(listing);
       // console.log(listing);
-      // location.reload();
+      location.reload();
     });
   }
 }

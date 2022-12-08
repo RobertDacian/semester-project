@@ -30,16 +30,17 @@ export default function router() {
       return;
     case "/profile/listings/":
       listeners.setCreateListingListenerHome();
+      listeners.setUpdateListingListener();
       listeners.setSearchFormListener();
       renderOwnListings();
       // listeners.createListing();
       // listeners.setSearchFormListenerHome();
       // listeners.setUpdateListingListener();
       renderAuctionListHome();
-    // 	return;
-    // case '/profile/create-listings/':
-    //   listeners.setCreateListingListener();
-    //   return;
+      return;
+    case "/profile/create-listings/":
+      listeners.setUpdateListingListener();
+      return;
     // case '/profile/listings/':
     // 	listeners.setUpdateListingListener();
     // 	return;
