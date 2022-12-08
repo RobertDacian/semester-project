@@ -20,6 +20,7 @@ export async function updateListing(listingData) {
   });
 
   const results = await response.json();
+
   console.log(results);
 
   // return await response.json(); // this is a shorter way to return results
