@@ -20,6 +20,11 @@ export function renderSearchedAuctionListHome(auctionsHome) {
 
 function renderAuctionsHome(auctionsHome) {
   const listingsContainer = document.querySelector("#cardWrapper1");
+
+  if (!listingsContainer) {
+    return;
+  }
+
   listingsContainer.innerHTML = "";
 
   auctionsHome.forEach((auction) => {

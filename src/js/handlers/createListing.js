@@ -14,8 +14,13 @@ export async function setCreateListingListenerHome() {
 
       const form = event.target;
       const formObject = new FormData(form);
+
       const listing = Object.fromEntries(formObject.entries());
+
       listing.media = [listing.media];
+
+      console.log("listing", listing);
+
       // const [title, body, tags, media, endsAt] = event.target;
 
       // const [title, body, tags, media, endsAt] = {
@@ -27,7 +32,7 @@ export async function setCreateListingListenerHome() {
       // };
 
       await createListing(listing);
-      console.log(listing);
+      // console.log(listing);
       location.reload();
     });
   }
