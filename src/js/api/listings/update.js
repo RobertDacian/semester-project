@@ -1,57 +1,29 @@
-// ========== Imports ==========
+//This is a template module for updating a post with method "PUT" to send data to the API, use this anytime you need to update a post with User Authentication.
+
 import { API_AUCTION_URL } from "../constants.js";
+
 import { authFetch } from "../authFetch.js";
-import { load } from "../../storage/index.js";
 
 const action = "/listings";
-const method = "PUT";
+const method = "put";
 
-//========== This template module updates the listing and sends the data to the API. ==========
-
-export async function updateListing(data) {
-  if (!data.id) {
-    throw new Error("Update requires an ID");
+export async function updateListing(listingData) {
+  if (!listingData.id) {
+    throw new Error("Update requires a listingID");
   }
 
-  const url = `${API_AUCTION_URL}${action}/${data.id}`;
+  const updateListingURL = `${API_AUCTION_URL}${action}/${listingData.id}`;
 
-  const response = await authFetch(url, {
+  const response = await authFetch(updateListingURL, {
     method,
-    body: JSON.stringify(data),
+    body: JSON.stringify(listingData),
   });
 
   const results = await response.json();
 
   console.log(results);
 
-  return results;
-}
-
-//========== This template module updates the avatar and sends the data to the API. ==========
-
-/**
- * Function to update avatar
- * @param {string} data
- * @returns
- */
-
-export async function updateAvatar(data) {
-  const { name } = load("profile");
-
-  if (!name) {
-    throw new Error("Please provide name");
-  }
-
-  const url = `${API_AUCTION_URL}${action}/${name}/media`;
-
-  const response = await authFetch(url, {
-    method,
-    body: JSON.stringify(data),
-  });
-
-  const results = await response.json();
-
-  console.log(results);
+  // return await response.json(); // this is a shorter way to return results
 
   return results;
 }

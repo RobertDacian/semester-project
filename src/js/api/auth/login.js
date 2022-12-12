@@ -1,22 +1,12 @@
-// ========== Imports ==========
-
 import { API_AUCTION_URL } from "../constants.js";
 import * as storage from "../../storage/index.js";
-
-//========== This template module creates log in functionalities, saves data to localStorage and sends data to the API. ==========
 
 const action = "/auth/login";
 const method = "POST";
 
-/**
- * Function to log in user
- * @param {string} data
- * @returns logged in user
- */
-
-export async function login(data) {
-  const url = API_AUCTION_URL + action;
-  const body = JSON.stringify(data);
+export async function login(profile) {
+  const loginURL = API_AUCTION_URL + action;
+  const body = JSON.stringify(profile);
   const options = {
     method,
     body,
@@ -26,11 +16,12 @@ export async function login(data) {
   };
 
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(loginURL, options);
     const { accessToken, credits, avatar, ...userProfile } =
       await response.json();
 
     if (response.ok) {
+      // storage.save("name", userName)
       storage.save("token", accessToken);
       storage.save("profile", userProfile);
       storage.save("credits", credits);
