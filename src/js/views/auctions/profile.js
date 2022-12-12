@@ -2,7 +2,6 @@
 
 import { getProfile } from "../../api/listings/read.js";
 import { getAvatar } from "../../api/listings/read.js";
-// import { getCredits } from '../../api/listings/read.js';
 import { load } from "../../storage/index.js";
 
 // =========== Rendering my profile ============
