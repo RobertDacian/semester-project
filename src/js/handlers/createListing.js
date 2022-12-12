@@ -6,7 +6,9 @@ import { createListing } from "../api/listings/create.js";
  */
 
 export async function setCreateListingListenerHome() {
-  const form = document.querySelector("#createListingHome");
+  const form = document.querySelector(
+    "#createListingHome, #createListingProfile"
+  );
   if (form) {
     form.addEventListener("submit", async (event) => {
       event.preventDefault();

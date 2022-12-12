@@ -155,7 +155,7 @@
                       </li>
                       <!-- / Nav item -->
                       <!-- Nav item -->
-                      <li class="nav-item">
+                      <li class="nav-item d-none">
                         <a
                           class="nav-link"
                           href="../../profile/create-listings/"
@@ -323,88 +323,57 @@
     data-bs-target="#editListingsModal">
     Update
   </button> -->
+
     <!-- Edit Listing Modal Start -->
-    <div
-      class="modal fade"
-      id="updateListingModal"
-      tabindex="-1"
-      aria-labelledby="postModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title ms-2" id="postModalLabel">
-              Use this form to update your auction
-            </h4>
-            <button
-              type="button"
-              class="btn-close ms-auto"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-12">
-                <h1 class="mb-2">Update auction</h1>
-                <form id="editListingProfile">
-                  <div class="form-group mb-3">
-                    <label for="">Title</label>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="title"
-                      placeholder="Auction title"
-                      required
-                    />
-                  </div>
 
-                  <div class="form-group mb-3">
-                    <label for="">Description</label>
-                    <textarea class="form-control" name="description" required>
-                    </textarea>
-                  </div>
+    <!-- <div class="modal fade" id="updateListingModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title ms-2" id="postModalLabel">
+            Use this form to update your auction
+          </h4>
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="mb-2">Update auction</h1>
+              <form id="editListingProfile">
+                <div class="form-group mb-3">
+                  <label for="">Title</label>
+                  <input class="form-control" type="text" name="title" placeholder="Auction title" required />
+                </div>
 
-                  <div class="form-group mb-3">
-                    <label for="">Tags</label>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="tags"
-                      placeholder="Action tags"
-                    />
-                  </div>
+                <div class="form-group mb-3">
+                  <label for="">Description</label>
+                  <textarea class="form-control" name="description" required>
+                  </textarea>
+                </div>
 
-                  <div class="form-group mb-3">
-                    <label for="">Media</label>
-                    <input
-                      class="form-control"
-                      type="url"
-                      name="media"
-                      placeholder="Image Url"
-                    />
-                  </div>
+                <div class="form-group mb-3">
+                  <label for="">Tags</label>
+                  <input class="form-control" type="text" name="tags" placeholder="Action tags" />
+                </div>
 
-                  <div class="form-group mb-3">
-                    <label for="">Listing ends at</label>
-                    <input
-                      class="form-control"
-                      type="date"
-                      id="date-picker"
-                      name="endsAt"
-                      required
-                    />
-                  </div>
+                <div class="form-group mb-3">
+                  <label for="">Media</label>
+                  <input class="form-control" type="url" name="media" placeholder="Image Url" />
+                </div>
 
-                  <button class="btn btn-primary mb-2">Update Listing</button>
-                </form>
-              </div>
+                <div class="form-group mb-3">
+                  <label for="">Listing ends at</label>
+                  <input class="form-control" type="date" id="date-picker" name="endsAt" required />
+                </div>
+
+                <button class="btn btn-primary mb-2">Update Listing</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div> -->
     <!-- Edit Listing Modal End -->
 
     <!-- footer -->
