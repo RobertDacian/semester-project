@@ -1,28 +1,22 @@
-// ========== Imports ==========
+//This is a template module for deleting a post with method "DELETE". This will delete the data from the API, use this anytime you need to delete a post with User Authentication.
+
 import { API_AUCTION_URL } from "../constants.js";
+
 import { authFetch } from "../authFetch.js";
 
-//========== This template module removes all the listings from the the API. ==========
-
 const action = "/listings";
-const method = "DELETE";
-
-/**
- * Function to remove listing
- * @param {string} data
- * @returns nothing
- */
+const method = "delete";
 
 export async function removeListing(id) {
   if (!id) {
     throw new Error("Delete requires a listingID");
   }
 
-  const url = `${API_AUCTION_URL}${action}/${id}`;
+  const updateListingURL = `${API_AUCTION_URL}${action}/${id}`;
 
-  const response = await authFetch(url, {
+  const response = await authFetch(updateListingURL, {
     method,
-    // body: JSON.stringify(id),
+    // body: JSON.stringify(listingData),
   });
 
   const results = await response.json();
