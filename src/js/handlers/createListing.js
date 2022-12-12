@@ -32,7 +32,6 @@ export async function setCreateListingListenerHome() {
       // };
 
       await createListing(listing);
-      // console.log(listing);
       location.reload();
     });
   }
