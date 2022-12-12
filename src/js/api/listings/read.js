@@ -1,19 +1,15 @@
-// ========== Imports ==========
-
 import { API_AUCTION_URL } from "../constants.js";
 import { authFetch } from "../authFetch.js";
 import { getProfileName } from "../../storage/helpers.js";
-import { getProfileAvatar } from "../../storage/helpers.js";
-import { getProfileCredits } from "../../storage/helpers.js";
 
-//========== This template module gets all the listings from the the API. ==========
+// Fetching all listings fot both, signed in user and not signed in user
 
 const action = "/listings";
 
 export async function getListings() {
-  const url = `${API_AUCTION_URL}${action}`;
+  const allListingsUrl = `${API_AUCTION_URL}${action}`;
 
-  const response = await authFetch(url);
+  const response = await authFetch(allListingsUrl);
   if (response.ok) {
     return await response.json();
   }
@@ -21,12 +17,12 @@ export async function getListings() {
   throw new Error(response.statusText);
 }
 
-// ========== This template module is tag based search functionality for all the listings ==========
+// Search functionality
 
 export async function searchListings(searchTerm) {
-  const url = `${API_AUCTION_URL}${action}?_tag=${searchTerm}`;
+  const searchedListingsUrl = `${API_AUCTION_URL}${action}?_tag=${searchTerm}`;
 
-  const response = await authFetch(url);
+  const response = await authFetch(searchedListingsUrl);
   if (response.ok) {
     return await response.json();
   }
@@ -34,7 +30,7 @@ export async function searchListings(searchTerm) {
   throw new Error(response.statusText);
 }
 
-//========== This template module gets my own listings from the the API. ==========
+// Getting my own listings on the profile page
 
 export async function getOwnListings() {
   const name = getProfileName();
@@ -54,73 +50,25 @@ export async function getOwnListings() {
   throw new Error(response.statusText);
 }
 
-//========== This template module gets my own profile from the the API. ==========
+// const queryString = document.location.search;
+// const params = new URLSearchParams(queryString);
+// const name = params.get('name');
 
-export async function getProfile() {
-  const name = getProfileName();
+// // Get the auth token
 
-  if (!name) {
-    return [];
-  }
+// export async function getListing() {
 
-  const url = `${API_AUCTION_URL}/profiles/${name}`;
+// 	const singleListingURL = `${API_AUCTION_URL}${profiles}/name/listings`;
 
-  const response = await authFetch(url);
+// 	const response = await authFetch(singleListingURL, {});
 
-  if (response.ok) {
-    return await response.json();
-  }
+// 	const results = await response.json();
+// 	console.log(results);
+// 	// return await response.json(); // this is a shorter way to return results
 
-  throw new Error(response.statusText);
-}
+//   if (response.ok) {
+//     location.href = '../listings';
 
-//========== This template module gets my own avatar from the the API. ==========
-
-export async function getAvatar() {
-  const name = getProfileName();
-  const media = getProfileAvatar();
-
-  if (!name) {
-    return [];
-  }
-
-  if (!media) {
-    return [];
-  }
-
-  const url = `${API_AUCTION_URL}/profiles/${name}${media}`;
-
-  const response = await authFetch(url);
-
-  if (response.ok) {
-    return await response.json();
-  }
-
-  throw new Error(response.statusText);
-}
-
-//========== This template module gets my listing credits from the the API. ==========
-
-export async function getCredits() {
-  const name = getProfileName();
-  const media = getProfileAvatar();
-  const credits = getProfileCredits();
-
-  if (!name) {
-    return [];
-  }
-
-  if (!media) {
-    return [];
-  }
-
-  const url = `${API_AUCTION_URL}/profiles/${name}${credits}`;
-
-  const response = await authFetch(url);
-
-  if (response.ok) {
-    return await response.json();
-  }
-
-  throw new Error(response.statusText);
-}
+// 		return results;
+//  }
+// }

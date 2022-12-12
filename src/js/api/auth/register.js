@@ -1,21 +1,41 @@
-// ========== Imports ==========
+// import { API_AUCTION_URL } from "../constants.js";
+
+// const action = "/auth/register";
+// const method = "post";
+
+// export async function register(profile) {
+//   const registerURL = API_AUCTION_URL + action;
+//   const body = JSON.stringify(profile);
+
+//   const options = {
+//     headers: {
+//       "Content-Type": "application/json;",
+//     },
+//     method,
+//     body,
+//   };
+
+//   try {
+// 		const response = await fetch(registerURL, options);
+// 		const result = await response.json();
+// 		console.log(result);
+
+// 		if (response.ok) {
+// 			location.href = '../../profile/sign-in/';
+// 		}
+// 	} catch (err) {
+//       console.log(err)
+// }
+// }
 
 import { API_AUCTION_URL } from "../constants.js";
-
-//========== This template module creates registration functionalities, and sends data to the API. ==========
 
 const action = "/auth/register";
 const method = "post";
 
-/**
- * Function to register new user
- * @param {string} data
- * @returns new registered user
- */
-
-export async function register(data) {
-  const url = API_AUCTION_URL + action;
-  const body = JSON.stringify(data);
+export async function register(profile) {
+  const registerURL = API_AUCTION_URL + action;
+  const body = JSON.stringify(profile);
 
   const options = {
     headers: {
@@ -26,7 +46,7 @@ export async function register(data) {
   };
 
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(registerURL, options);
     const result = await response.json();
     console.log(result);
 
