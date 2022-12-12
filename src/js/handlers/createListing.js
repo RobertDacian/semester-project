@@ -21,16 +21,6 @@ export async function setCreateListingListenerHome() {
 
       console.log("listing", listing);
 
-      // const [title, body, tags, media, endsAt] = event.target;
-
-      // const [title, body, tags, media, endsAt] = {
-      // 	title: title.value,
-      // 	description: body.value,
-      // 	tags: [tags.value],
-      // 	media: [media.value],
-      // 	endsAt: endsAt.value,
-      // };
-
       await createListing(listing);
       location.reload();
     });
