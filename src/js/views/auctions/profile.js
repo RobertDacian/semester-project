@@ -1,8 +1,9 @@
 // ========== Imports ==========
 
-import { getProfile } from "../../api/listings/read.js";
-import { getAvatar } from "../../api/listings/read.js";
+import { getProfile } from "../../api/profile/read.js";
+// import { getAvatar } from "../../api/listings/read.js";
 import { load } from "../../storage/index.js";
+// import * as storage  from '../../storage/helpers.js';
 
 // =========== Rendering my profile ============
 
@@ -41,21 +42,21 @@ function myProfile() {
 
 // =========== Rendering my avatar ============
 
-export async function renderAvatar() {
-  const avatar = await getAvatar();
-  myAvatar(avatar);
-}
+// export async function renderAvatar() {
+//   const avatar = await getAvatar();
+//   myAvatar(avatar);
+// }
 
-function myAvatar() {
-  const avatarContainer = document.querySelector("#avatarImg, #avatarImg1");
+// function myAvatar() {
+//   const avatarContainer = document.querySelector("#avatarImg, #avatarImg1");
 
-  const media = load("avatar");
+//   const media = load("avatar");
 
-  if (media) {
-    avatarContainer.innerHTML = `<div class="d-flex align-items-center">
-                <div id="avatarImg1" class="me-2">
-                  <img src="${media}" class="avatar-lg rounded-circle" alt="" />
-                </div>
-              </div>`;
-  }
-}
+//   if (media) {
+//     avatarContainer.innerHTML = `<div class="d-flex align-items-center">
+//                 <div id="avatarImg1" class="me-2">
+//                   <img src="${media}" class="avatar-lg rounded-circle" alt="" />
+//                 </div>
+//               </div>`;
+//   }
+// }
