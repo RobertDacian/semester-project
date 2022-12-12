@@ -37,8 +37,8 @@ function renderOwnAuctions(auctions) {
                       <div class="d-flex  gap-2  flex-column  justify-content-md-start w-100">
                         <div class="d-flex justify-content-between gap-2">
                           <img src="${auction.media}" class="rounded-circle avatar-sm me-auto" alt="" />
-                          <a href="/profile/create-listings/?id=${auction.id}" data-id="${auction.id}"  class="btn btn-outline-primary btn-sm">Update</a>
-                          <a href="/profile/listings/?id=${auction.id}" data-id="${auction.id}" data-bs-target="#updateListingModal" data-bs-toggle="modal" class="btn btn-outline-primary btn-sm">Update</a>
+                          <a href="/profile/edit-listings/?id=${auction.id}" data-id="${auction.id}"  class="btn btn-outline-primary btn-sm">Update</a>
+                          
                           <a href="/profile/listings/${auction.id}" class="btn btn-outline-danger btn-sm">Delete</a>
                         </div>
                         <h4 class="mb-0 mt-2 w-100 ">Tagged - ${auction.tags}</h4>

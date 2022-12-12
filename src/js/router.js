@@ -38,7 +38,7 @@ export default function router() {
       // listeners.setUpdateListingListener();
       renderAuctionListHome();
       return;
-    case "/profile/create-listings/":
+    case "/profile/edit-listings/":
       listeners.setUpdateListingListener();
       return;
     // case '/profile/listings/':
