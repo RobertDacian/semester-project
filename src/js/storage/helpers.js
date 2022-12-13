@@ -5,7 +5,7 @@ export function getProfileName() {
   return profile?.name;
 }
 
-export function getAvatar() {
+export function getProfileAvatar() {
   const media = storage.load("avatar");
   return media?.avatar;
 }

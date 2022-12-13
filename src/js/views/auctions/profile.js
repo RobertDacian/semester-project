@@ -19,20 +19,21 @@ function myProfile() {
 
   const profile = JSON.parse(localStorage.getItem("profile"));
 
-  const { name } = load("profile");
-  const media = load("avatar");
+  const data = load("profile");
+  const { name } = data;
+  const avatar = load("avatar");
   const credits = load("credits");
 
-  // console.log(profile);
+  console.log(profile);
 
   profilesContainer.innerHTML = "";
 
   if (profile) {
-    profilesContainer.innerHTML = `<div class="d-flex align-items-center">
+    profilesContainer.innerHTML = `<div class="d-flex align-items-center bg-white px-2 py-2 ">
                 <div id="avatarImg1" class="me-2">
-                  <img src="${media}" class="avatar-lg rounded-circle" alt="" />
+                  <img src="${avatar}" class="avatar-lg rounded-circle" alt="" />
                 </div>
-                <div class="d-block">
+                <div class="d-flex flex-column pt-4">
                   <h2 class="mb-0">${name}</h2>
                   <p>Credits: ${credits}</p>
                 </div>

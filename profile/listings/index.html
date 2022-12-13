@@ -81,22 +81,22 @@
                   alt="Background image"
                 />
               </div>
+
               <div
-                class="d-flex flex-wrap align-items-end justify-content-between gap-4 bg-white px-4 py-4 rounded-bottom shadow-sm"
+                class="d-flex flex-wrap align-items-center justify-content-between gap-4 bg-white px-4 py-4 rounded-bottom shadow-sm"
               >
-                <div class="d-flex align-items-center">
-                  <div class="me-2">
-                    <img
-                      src="../../assets/avatars/img_me.jpg"
-                      class="avatar-lg rounded-circle"
-                      alt=""
-                    />
+                <div id="profileContainer1">
+                  <!-- <div class="d-flex align-items-center mt-4">
+                  <div id="avatarImg1" class="me-2">
+                    <img src="${avatar}" class="avatar-lg rounded-circle" alt="" />
                   </div>
                   <div class="d-block">
-                    <h2 class="mb-0">Robert D.B</h2>
-                    <p class="mb-0">@RobertDacian</p>
+                    <h2 class="mb-0">${name}</h2>
+                    <p>Credits: ${credits}</p>
                   </div>
+                </div> -->
                 </div>
+
                 <div>
                   <!-- Create Listings Modal Button -->
                   <button
@@ -110,123 +110,123 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Post Content -->
-          <div class="row mt-4">
-            <div class="col-lg-3 col-md-4 col-12">
-              <!-- Side Page Nav -->
-              <nav
-                class="navbar navbar-expand-md d-flex justify-content-end bg-white shadow-sm mb-0 pe-4 py-3 sidenav sticky-top"
-              >
-                <!-- Nav Menu -->
-                <h3 class="d-xl-none d-lg-none d-md-none mb-0 me-2">Menu</h3>
-                <!-- Hamburger Button -->
-                <button
-                  class="navbar-toggler d-md-none rounded bg-primary"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#sidenav"
-                  aria-controls="sidenav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                ></button>
-                <!-- Sidebar navigation -->
-                <div class="collapse navbar-collapse" id="sidenav">
-                  <div class="navbar-nav flex-column ms-4">
-                    <!-- Sidebar menu title -->
-                    <spam class="navbar-header fw-bold mb-0"
-                      >Navigation Menu</spam
-                    >
-                    <!-- / Sidebar menu title -->
-
-                    <!-- Sidebar nav list -->
-                    <ul class="list-unstyled mb-4">
-                      <!-- Nav item -->
-                      <li class="nav-item">
-                        <a class="nav-link" href="../../profile/my-profile/"
-                          >Profile</a
-                        >
-                      </li>
-                      <!-- / Nav item -->
-
-                      <!-- Nav item -->
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Listings</a>
-                      </li>
-                      <!-- / Nav item -->
-                      <!-- Nav item -->
-                      <li class="nav-item d-none">
-                        <a
-                          class="nav-link"
-                          href="../../profile/create-listings/"
-                          >Create Listings</a
-                        >
-                      </li>
-                      <!-- / Nav item -->
-                    </ul>
-                    <!-- / Sidebar nav list -->
-
-                    <!-- Sidebar menu title -->
-                    <spam class="navbar-header fw-bold mb-0"
-                      >Account Settings</spam
-                    >
-                    <!-- / Sidebar menu title -->
-
-                    <!-- Sidebar nav list -->
-                    <ul class="list-unstyled ms-n2 mb-0">
-                      <!-- Nav item -->
-                      <li class="nav-item">
-                        <a class="nav-link" href="../../"
-                          ><i class="fe fe-power nav-icon"></i>Sign Out</a
-                        >
-                      </li>
-                      <!-- / Nav item -->
-                    </ul>
-                    <!-- / Sidebar nav list -->
-                  </div>
-                </div>
-                <!-- / Sidebar navigation -->
-              </nav>
-            </div>
-            <!-- Posts -->
-            <div class="col-lg-9 col-md-8 col-12">
-              <!-- Intro Card -->
-              <div class="d-flex align-items-center mb-4">
-                <div
-                  class="card p-4 d-flex flex-lg-row flex-column align-items-center w-100"
+            <!-- Post Content -->
+            <div class="row mt-4">
+              <div class="col-lg-3 col-md-4 col-12">
+                <!-- Side Page Nav -->
+                <nav
+                  class="navbar navbar-expand-md d-flex justify-content-end bg-white shadow-sm mb-0 pe-4 py-3 sidenav sticky-top"
                 >
-                  <div class="d-flex flex-column w-100">
-                    <h3 class="mb-0">Listings</h3>
-                    <span>See recent listings here</span>
+                  <!-- Nav Menu -->
+                  <h3 class="d-xl-none d-lg-none d-md-none mb-0 me-2">Menu</h3>
+                  <!-- Hamburger Button -->
+                  <button
+                    class="navbar-toggler d-md-none rounded bg-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sidenav"
+                    aria-controls="sidenav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  ></button>
+                  <!-- Sidebar navigation -->
+                  <div class="collapse navbar-collapse" id="sidenav">
+                    <div class="navbar-nav flex-column ms-4">
+                      <!-- Sidebar menu title -->
+                      <spam class="navbar-header fw-bold mb-0"
+                        >Navigation Menu</spam
+                      >
+                      <!-- / Sidebar menu title -->
+
+                      <!-- Sidebar nav list -->
+                      <ul class="list-unstyled mb-4">
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                          <a class="nav-link" href="../../profile/my-profile/"
+                            >Profile</a
+                          >
+                        </li>
+                        <!-- / Nav item -->
+
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Listings</a>
+                        </li>
+                        <!-- / Nav item -->
+                        <!-- Nav item -->
+                        <li class="nav-item d-none">
+                          <a
+                            class="nav-link"
+                            href="../../profile/create-listings/"
+                            >Create Listings</a
+                          >
+                        </li>
+                        <!-- / Nav item -->
+                      </ul>
+                      <!-- / Sidebar nav list -->
+
+                      <!-- Sidebar menu title -->
+                      <spam class="navbar-header fw-bold mb-0"
+                        >Account Settings</spam
+                      >
+                      <!-- / Sidebar menu title -->
+
+                      <!-- Sidebar nav list -->
+                      <ul class="list-unstyled ms-n2 mb-0">
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                          <a class="nav-link" href="../../"
+                            ><i class="fe fe-power nav-icon"></i>Sign Out</a
+                          >
+                        </li>
+                        <!-- / Nav item -->
+                      </ul>
+                      <!-- / Sidebar nav list -->
+                    </div>
                   </div>
-                  <!-- Search Post Form -->
-                  <div class="form-wrapper d-flex align-items-center w-100">
-                    <form
-                      class="mt-3 mt-lg-0 ms-lg-3 me-lg-0 d-flex align-items-center w-100"
-                    >
-                      <span class="position-absolute ps-3 search-icon">
-                        <img
-                          src="../../assets/svg/search.svg"
-                          class="search-icon"
+                  <!-- / Sidebar navigation -->
+                </nav>
+              </div>
+              <!-- Posts -->
+              <div class="col-lg-9 col-md-8 col-12">
+                <!-- Intro Card -->
+                <div class="d-flex align-items-center mb-4">
+                  <div
+                    class="card p-4 d-flex flex-lg-row flex-column align-items-center w-100"
+                  >
+                    <div class="d-flex flex-column w-100">
+                      <h3 class="mb-0">Listings</h3>
+                      <span>See recent listings here</span>
+                    </div>
+                    <!-- Search Post Form -->
+                    <div class="form-wrapper d-flex align-items-center w-100">
+                      <form
+                        class="mt-3 mt-lg-0 ms-lg-3 me-lg-0 d-flex align-items-center w-100"
+                      >
+                        <span class="position-absolute ps-3 search-icon">
+                          <img
+                            src="../../assets/svg/search.svg"
+                            class="search-icon"
+                          />
+                        </span>
+                        <input
+                          type="search"
+                          id="searcOwnListings"
+                          class="bg-white form-control ps-6 w-100"
+                          placeholder="Search listings"
                         />
-                      </span>
-                      <input
-                        type="search"
-                        id="searcOwnListings"
-                        class="bg-white form-control ps-6 w-100"
-                        placeholder="Search listings"
-                      />
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- Listings Card -->
-              <div id="ownListings" class="card">
-                <div
-                  id="cardWrapper2"
-                  class="card bg-transparent mb-4 shadow-sm rounded"
-                ></div>
-                <div class="msg-container"></div>
+                <!-- Listings Card -->
+                <div id="ownListings" class="card">
+                  <div
+                    id="cardWrapper2"
+                    class="card bg-transparent mb-4 shadow-sm rounded"
+                  ></div>
+                  <div class="msg-container"></div>
+                </div>
               </div>
             </div>
           </div>

@@ -34,6 +34,7 @@ export default function router() {
       listeners.setUpdateListingListener();
       listeners.setSearchFormListener();
       renderOwnListings();
+      renderProfile();
       // listeners.createListing();
       // listeners.setSearchFormListenerHome();
       // listeners.setUpdateListingListener();
@@ -46,9 +47,9 @@ export default function router() {
       // listeners.setUpdateAvatarListener();
       renderProfile();
       return;
-    // case '/profile/my-profile/':
-    // 	listeners.setUpdateProfileListener();
-    // 	return;
+    // case '/profile/listings/':
+    //   renderProfile();
+    //   return;
   }
 }
 
