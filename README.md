@@ -38,14 +38,6 @@
   </tbody>
 </table>
 
-Resource URL
-Gantt Chart
-Design Prototype
-Style Guide
-Kanban Board
-Repository
-Hosted Demo
-
 ## Initializing and starting the project
 
 - Clone the project and initialize git in your code editor.
