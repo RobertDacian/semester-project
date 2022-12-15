@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th><h3>Resource</h3></th>
-      <td>URL</td>
+      <td><h3>URL</h3></td>
     </tr>
   </thead>
   <tbody>
