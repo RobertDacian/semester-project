@@ -4,6 +4,7 @@ import {
   renderOwnListings,
 } from "./views/auctions/auctionList.js";
 import { renderAuctionListHome } from "./views/auctions/auctionListHome.js";
+import { renderProfile } from "./views/auctions/profile.js";
 
 // import { renderSearchedAuctionListHome } from "../js/views/auctions/auctionListHome.js";
 
@@ -33,6 +34,7 @@ export default function router() {
       listeners.setUpdateListingListener();
       listeners.setSearchFormListener();
       renderOwnListings();
+      renderProfile();
       // listeners.createListing();
       // listeners.setSearchFormListenerHome();
       // listeners.setUpdateListingListener();
@@ -41,12 +43,13 @@ export default function router() {
     case "/profile/edit-listings/":
       listeners.setUpdateListingListener();
       return;
+    case "/profile/my-profile/":
+      // listeners.setUpdateAvatarListener();
+      renderProfile();
+      return;
     // case '/profile/listings/':
-    // 	listeners.setUpdateListingListener();
-    // 	return;
-    // case '/profile/my-profile/':
-    // 	listeners.setUpdateProfileListener();
-    // 	return;
+    //   renderProfile();
+    //   return;
   }
 }
 
