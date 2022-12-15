@@ -5,35 +5,35 @@
 <table>
   <thead>
     <tr>
-      <th>Resource</th>
+      <th><h3>Resource</h3></th>
       <td>URL</td>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Gantt Chart</th>
-      <td><a href="https://trello.com/b/vZztrSLS/semester-2-project/power-up/617b04f5b2f39543c2084b81" target="_blank">Gantt Chart Link</a></td>
+      <td><a href="https://trello.com/b/vZztrSLS/semester-2-project/power-up/617b04f5b2f39543c2084b81">Gantt Chart Link</a></td>
     </tr>
     <tr>
       <th>Design Prototype</th>
-      <td><a href="https://xd.adobe.com/view/499f0ea4-cf99-4a5d-b958-497b082c47e3-1ccc" target="_blank">Design Link</a>
+      <td><a href="https://xd.adobe.com/view/499f0ea4-cf99-4a5d-b958-497b082c47e3-1ccc">Design Link</a>
       </td>
     </tr>
     <tr>
       <th>Style Guide</th>
-      <td><a href="https://xd.adobe.com/view/499f0ea4-cf99-4a5d-b958-497b082c47e3-1ccc" target="_blank">Style Guide</a></td>
+      <td><a href="https://xd.adobe.com/view/499f0ea4-cf99-4a5d-b958-497b082c47e3-1ccc">Style Guide</a></td>
     </tr>
     <tr>
       <th>Kanban Board</th>
-      <td><a href="https://trello.com/b/vZztrSLS/semester-2-project" target="_blank">Project Board Link</a></td>
+      <td><a href="https://trello.com/b/vZztrSLS/semester-2-project">Project Board Link</a></td>
     </tr>
     <tr>
       <th>Repository</th>
-      <td><a href="https://github.com/RobertDacian/semester-project.git" target="_blank">Project Repository</a></td>
+      <td><a href="https://github.com/RobertDacian/semester-project.git">Project Repository</a></td>
     </tr>
     <tr>
       <th>Hosted Demo</th>
-      <td><a href="https://auction.dev-squid.com/" target="_blank">Live Site</a></td>
+      <td><a href="https://auction.dev-squid.com/">Live Site</a></td>
     </tr>
   </tbody>
 </table>
