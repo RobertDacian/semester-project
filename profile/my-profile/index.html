@@ -272,7 +272,19 @@
                       Edit your personal information and address.
                     </p>
                     <!-- Form -->
-                    <form class="row">
+                    <form id="editAvatar" class="row">
+                      <!-- Avatar -->
+                      <div class="mb-3 col-12 col-md-6">
+                        <label for="password" class="form-label">Avatar</label>
+                        <input
+                          type="url"
+                          id="avatar"
+                          class="form-control"
+                          name="avatar"
+                          placeholder="Enter your image URL here"
+                          title="Please enter a valid url in this field"
+                        />
+                      </div>
                       <!-- Username -->
                       <div class="mb-3 col-12 col-md-6">
                         <label for="username" class="form-label"
@@ -288,6 +300,7 @@
                           maxlength="20"
                           pattern="^[\w]+$"
                           title="Username must only contain lower case and uppercase letters, numbers and underscore (_). Example: My_Username123"
+                          disabled
                         />
                       </div>
                       <!-- Email -->
@@ -302,6 +315,7 @@
                           required
                           pattern="^[\w\-.]+@(stud.)?noroff.no$"
                           title="Only @(stud.)noroff.no domains are allowed to register"
+                          disabled
                         />
                       </div>
                       <!-- Password -->
@@ -317,20 +331,10 @@
                           placeholder="**************"
                           required
                           minlength="8"
+                          disabled
                         />
                       </div>
-                      <!-- Avatar -->
-                      <div class="mb-3 col-12 col-md-6">
-                        <label for="password" class="form-label">Avatar</label>
-                        <input
-                          type="url"
-                          id="avatar"
-                          class="form-control"
-                          name="avatar"
-                          placeholder="Enter your image URL here"
-                          title="Please enter a valid url in this field"
-                        />
-                      </div>
+
                       <!-- Phone -->
                       <div class="mb-3 col-12 col-md-6">
                         <label class="form-label" for="phone">Phone</label>
@@ -343,18 +347,7 @@
                           disabled
                         />
                       </div>
-                      <!-- Birthday -->
-                      <div class="mb-3 col-12 col-md-6">
-                        <label class="form-label" for="birth">Birthday</label>
-                        <input
-                          class="form-control flatpickr"
-                          type="text"
-                          placeholder="Birth of Date"
-                          id="birth"
-                          name="birth"
-                          disabled
-                        />
-                      </div>
+
                       <!-- Address -->
                       <div class="mb-3 col-12 col-md-6">
                         <label class="form-label" for="address"
@@ -377,6 +370,7 @@
                           class="form-control mb-4"
                           name="description"
                           placeholder="Your Bio"
+                          disabled
                         ></textarea>
                       </div>
 
