@@ -11,13 +11,12 @@ export async function setUpdateListingListener() {
     "#editListingProfile1, #editListingProfile"
   );
 
-  // const updateBtn = document.querySelector('updateBtn');
-
   const url = new URL(location.href);
   const id = url.searchParams.get("id");
 
   if (form) {
     const update = await getListings(id);
+    // document.querySelector('input#title').value = update.title;
     form.title.value = update.title;
     form.description.value = update.description;
     form.tags.value = update.tags;
