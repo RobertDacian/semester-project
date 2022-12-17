@@ -1,9 +1,9 @@
 // ========== Imports ==========
 
-import { getProfile } from "../../api/profile/read.js";
-// import { getAvatar } from "../../api/listings/read.js";
+import { getProfile } from "../../api/profile/index.js";
+// import { getAvatar } from "../../api/profile/read.js";
 import { load } from "../../storage/index.js";
-// import * as storage  from '../../storage/helpers.js';
+import { getProfileName, getProfileAvatar } from "../../storage/helpers.js";
 
 // =========== Rendering my profile ============
 
@@ -17,18 +17,19 @@ function myProfile() {
     "#profileContainer, #profileContainer1"
   );
 
-  const profile = JSON.parse(localStorage.getItem("profile"));
+  // const profile = JSON.parse(localStorage.getItem("profile"));
 
   const data = load("profile");
-  const { name } = data;
-  const avatar = load("avatar");
+  const name = getProfileName();
+  const avatar = getProfileAvatar();
+  // const avatar = load('avatar');
   const credits = load("credits");
 
-  console.log(profile);
+  console.log(avatar);
 
   profilesContainer.innerHTML = "";
 
-  if (profile) {
+  if (data) {
     profilesContainer.innerHTML = `<div class="d-flex align-items-center bg-white px-2 py-2 ">
                 <div id="avatarImg1" class="me-2">
                   <img src="${avatar}" class="avatar-lg rounded-circle" alt="" />
@@ -52,6 +53,7 @@ function myProfile() {
 //   const avatarContainer = document.querySelector("#avatarImg, #avatarImg1");
 
 //   const media = load("avatar");
+//   //  const media = getProfileAvatar('avatar');
 
 //   if (media) {
 //     avatarContainer.innerHTML = `<div class="d-flex align-items-center">

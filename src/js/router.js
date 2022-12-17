@@ -44,7 +44,7 @@ export default function router() {
       listeners.setUpdateListingListener();
       return;
     case "/profile/my-profile/":
-      // listeners.setUpdateAvatarListener();
+      listeners.setUpdateAvatarListener();
       renderProfile();
       return;
     // case '/profile/listings/':
