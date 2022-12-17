@@ -289,10 +289,10 @@ npx mrm@2 lint-staged
 "version": "1.0.9"
 ```
 
-- Fixed avatar update.
+- Fixes done.
 
-- Version updated to 1.0.9
+- Version updated to 1.0.10
 
 ```
-"version": "1.0.9"
+"version": "1.0.10"
 ```
