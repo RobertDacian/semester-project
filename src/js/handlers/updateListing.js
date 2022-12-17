@@ -1,49 +1,49 @@
-// import { getListings } from '../api/listings/read.js';
-import { getListings, updateListing } from "../api/listings/index.js";
+import { getListing } from "../api/listings/read.js";
+import { updateListing } from "../api/listings/index.js";
+import { formatForDatePicker } from "../utils/formatters.js";
 
 /**
- * Function that creates new listing
+ * Function that updates new listing
  *
  */
 
 export async function setUpdateListingListener() {
-  const form = document.querySelector(
-    "#editListingProfile1, #editListingProfile"
-  );
+  const form = document.querySelector("#editListingProfile1");
 
   const url = new URL(location.href);
   const id = url.searchParams.get("id");
 
   if (form) {
-    const update = await getListings(id);
-    // document.querySelector('input#title').value = update.title;
+    const update = await getListing(id);
+    form.id = update.id;
     form.title.value = update.title;
     form.description.value = update.description;
     form.tags.value = update.tags;
     form.media.value = update.media;
-    form.endsAt.value = update.endDate;
+    form.endsAt.value = formatForDatePicker(update.endsAt);
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
-      // form.reset();
+
       const form = event.target;
       const data = new FormData(form);
-      // const listings = Object.fromEntries(data.entries());
-      // data.id = id;
-      // listings.media = [listings.media];
+      // const id = data.get('id');
       const title = data.get("title");
       const description = data.get("description");
       const endsAt = data.get("endsAt");
-      const media = data.get("media").split(", ");
+      const media =
+        data.get("media").trim().length > 0
+          ? data.get("media").split(",")
+          : null;
       const tags = data.get("tags").split(", ");
 
       const listingsData = { id, title, description, endsAt, media, tags };
 
-      console.log("listing", listingsData);
+      // console.log('listing', listingsData);
 
       await updateListing(listingsData);
 
-      location.href = "../../profile/listings";
+      location.href = "/profile/listings";
     });
   }
 }

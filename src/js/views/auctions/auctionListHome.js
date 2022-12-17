@@ -1,5 +1,4 @@
 import { getListings } from "../../api/listings/read.js";
-// import { searchListings } from '../../api/listings/read.js';
 
 export async function renderAuctionListHome() {
   const auctionsHome = await getListings();

@@ -1,7 +1,5 @@
 import { getListings, getOwnListings } from "../../api/listings/read.js";
 
-// import { message } from "../../components/messages.js";
-
 export async function renderAuctionList() {
   const auctions = await getListings();
   renderAuctions(auctions);
@@ -29,7 +27,6 @@ function renderOwnAuctions(auctions) {
   listingsContainer.innerHTML = "";
 
   auctions.forEach((auction) => {
-    // listingsContainer.innerHTML += `<div>${auction.title}<a href="/listing/edit/${auction.id}">Edit</a></div>`;
     listingsContainer.innerHTML += ` <div id"cardWrapper2" class="card w-100 mb-4 rounded">
                 <div class="d-flex flex-column">
                   <div class="card-header p-4 d-flex flex-column">

@@ -4,9 +4,7 @@ import {
   renderOwnListings,
 } from "./views/auctions/auctionList.js";
 import { renderAuctionListHome } from "./views/auctions/auctionListHome.js";
-import { renderProfile } from "./views/auctions/profile.js";
-
-// import { renderSearchedAuctionListHome } from "../js/views/auctions/auctionListHome.js";
+import { renderProfile } from "./views/auctions/profile/profile.js";
 
 export default function router() {
   const path = location.pathname;
@@ -21,7 +19,6 @@ export default function router() {
     case "/":
     case "/index.html":
       listeners.setSearchFormListener();
-      // listeners.setCreateListingListenerHome();
       renderAuctionList();
       return;
     case "/auction-house/":
@@ -35,9 +32,6 @@ export default function router() {
       listeners.setSearchFormListener();
       renderOwnListings();
       renderProfile();
-      // listeners.createListing();
-      // listeners.setSearchFormListenerHome();
-      // listeners.setUpdateListingListener();
       renderAuctionListHome();
       return;
     case "/profile/edit-listings/":
@@ -47,16 +41,7 @@ export default function router() {
       listeners.setUpdateAvatarListener();
       renderProfile();
       return;
-    // case '/profile/listings/':
-    //   renderProfile();
-    //   return;
   }
 }
 
 console.log(location.pathname);
-
-// createListing({
-//   title: "Example Listing",
-//   body: "Example Body",
-//   endsAt: "November 17, 2022"
-// })

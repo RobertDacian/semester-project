@@ -6,8 +6,25 @@ import { getProfileName } from "../../storage/helpers.js";
 
 const action = "/listings";
 
+/**
+ * Function to read listing
+ * @param {string}
+ * @returns new auction listing
+ */
+
 export async function getListings() {
   const allListingsUrl = `${API_AUCTION_URL}${action}`;
+
+  const response = await authFetch(allListingsUrl);
+  if (response.ok) {
+    return await response.json();
+  }
+
+  throw new Error(response.statusText);
+}
+
+export async function getListing(id) {
+  const allListingsUrl = `${API_AUCTION_URL}${action}/${id}`;
 
   const response = await authFetch(allListingsUrl);
   if (response.ok) {
@@ -49,26 +66,3 @@ export async function getOwnListings() {
 
   throw new Error(response.statusText);
 }
-
-// const queryString = document.location.search;
-// const params = new URLSearchParams(queryString);
-// const name = params.get('name');
-
-// // Get the auth token
-
-// export async function getListing() {
-
-// 	const singleListingURL = `${API_AUCTION_URL}${profiles}/name/listings`;
-
-// 	const response = await authFetch(singleListingURL, {});
-
-// 	const results = await response.json();
-// 	console.log(results);
-// 	// return await response.json(); // this is a shorter way to return results
-
-//   if (response.ok) {
-//     location.href = '../listings';
-
-// 		return results;
-//  }
-// }
