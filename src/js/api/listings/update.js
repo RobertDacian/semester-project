@@ -7,6 +7,12 @@ import { authFetch } from "../authFetch.js";
 const action = "/listings";
 const method = "put";
 
+/**
+ * Function to update listing
+ * @param {string} listingData
+ * @returns new auction listing
+ */
+
 export async function updateListing(listingData) {
   if (!listingData.id) {
     throw new Error("Update requires a listingID");

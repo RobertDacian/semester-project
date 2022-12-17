@@ -1,7 +1,7 @@
 import { getProfile, updateAvatar } from "../api/profile/index.js";
 
 /**
- * Function that creates new listing
+ * Function that updates Profile
  *
  */
 
