@@ -1,5 +1,6 @@
 import { API_AUCTION_URL } from "../constants.js";
 import * as storage from "../../storage/index.js";
+// import { saveProfileDetails } from '../../storage/helpers.js';
 
 const action = "/auth/login";
 const method = "POST";
@@ -23,6 +24,7 @@ export async function login(profile) {
     if (response.ok) {
       // storage.save("name", userName)
       storage.save("token", accessToken);
+      // saveProfileDetails(userProfile, avatar, credits);
       storage.save("profile", userProfile);
       storage.save("credits", credits);
       storage.save("avatar", avatar);

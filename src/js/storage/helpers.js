@@ -5,7 +5,13 @@ export function getProfileName() {
   return profile?.name;
 }
 
-export function getProfileAvatar() {
-  const media = storage.load("avatar");
-  return media?.avatar;
+// export function getProfileAvatar() {
+//   const avatar = storage.load("avatar");
+//   return avatar?.avatar;
+// }
+
+export function saveProfileDetails(profile, avatar, credits) {
+  storage.save("profile", profile);
+  storage.save("avatar", avatar);
+  storage.save("credits", credits);
 }

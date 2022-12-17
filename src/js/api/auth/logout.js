@@ -6,5 +6,6 @@ export function signOutBtn() {
     signOut.addEventListener("click", () => {
       remove("Token", "Profile", "credits");
     });
+    location.href = "../../";
   }
 }

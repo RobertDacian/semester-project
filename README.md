@@ -288,3 +288,11 @@ npx mrm@2 lint-staged
 ```
 "version": "1.0.9"
 ```
+
+- Fixes done.
+
+- Version updated to 1.0.10
+
+```
+"version": "1.0.10"
+```
