@@ -4,7 +4,7 @@ import {
   renderOwnListings,
 } from "./views/auctions/auctionList.js";
 import { renderAuctionListHome } from "./views/auctions/auctionListHome.js";
-import { renderProfile } from "./views/auctions/profile.js";
+import { renderProfile } from "./views/auctions/profile/profile.js";
 
 export default function router() {
   const path = location.pathname;

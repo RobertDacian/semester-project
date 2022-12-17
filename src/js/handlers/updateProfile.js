@@ -1,9 +1,6 @@
 import { getProfile, updateAvatar } from "../api/profile/index.js";
-
-/**
- * Function that updates Profile
- *
- */
+import { saveProfileDetails } from "../storage/helpers.js";
+import { renderProfile } from "../views/auctions/profile/profile.js";
 
 export async function setUpdateAvatarListener() {
   const form = document.querySelector("#editAvatar");
@@ -14,15 +11,19 @@ export async function setUpdateAvatarListener() {
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
-      // form.reset();
       const form = event.target;
       const data = new FormData(form);
       const avatarData = Object.fromEntries(data.entries());
-      const avatar = data.get("avatar");
 
-      console.log(avatar);
+      try {
+        const response = await updateAvatar(avatarData);
 
-      await updateAvatar(avatarData);
+        const { name, email, avatar, credits } = response;
+        saveProfileDetails({ name, email }, avatar, credits);
+        renderProfile();
+      } catch (error) {
+        // display error
+      }
 
       location.href = "../../profile/my-profile";
     });

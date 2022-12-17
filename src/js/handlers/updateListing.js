@@ -1,6 +1,5 @@
 import { getListing } from "../api/listings/read.js";
 import { updateListing } from "../api/listings/index.js";
-import displayError from "../components/displayError.js";
 import { formatForDatePicker } from "../utils/formatters.js";
 
 /**
@@ -13,10 +12,6 @@ export async function setUpdateListingListener() {
 
   const url = new URL(location.href);
   const id = url.searchParams.get("id");
-
-  if (!id) {
-    return displayError("There is no id");
-  }
 
   if (form) {
     const update = await getListing(id);

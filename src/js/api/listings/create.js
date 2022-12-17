@@ -26,10 +26,6 @@ export async function createListing(data) {
     delete data.media;
   }
 
-  // if (!data.body) {
-  //   delete data.body;
-  // }
-
   const response = await authFetch(createListingURL, {
     method,
     body: JSON.stringify(data),
